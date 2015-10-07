@@ -1,0 +1,66 @@
+C:\Users\Muddaser\Documents\Visual Studio 2012\Projects\ReadersCommLibrary\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.dll
+C:\Users\Muddaser\Documents\Visual Studio 2012\Projects\ReadersCommLibrary\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.pdb
+C:\Users\Muddaser\Documents\Visual Studio 2012\Projects\ReadersCommLibrary\ReadersCommLibrary\bin\Debug\Interop.zkemkeeper.dll
+C:\Users\Muddaser\Documents\Visual Studio 2012\Projects\ReadersCommLibrary\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Muddaser\Documents\Visual Studio 2012\Projects\ReadersCommLibrary\ReadersCommLibrary\obj\Debug\Interop.zkemkeeper.dll
+C:\Users\Muddaser\Documents\Visual Studio 2012\Projects\ReadersCommLibrary\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.csproj.ResolveComReference.cache
+C:\Users\Muddaser\Documents\Visual Studio 2012\Projects\ReadersCommLibrary\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.dll
+C:\Users\Muddaser\Documents\Visual Studio 2012\Projects\ReadersCommLibrary\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.pdb
+D:\CNS\TAS_MVC\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.dll
+D:\CNS\TAS_MVC\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.pdb
+D:\CNS\TAS_MVC\ReadersCommLibrary\bin\Debug\Interop.zkemkeeper.dll
+D:\CNS\TAS_MVC\ReadersCommLibrary\obj\Debug\Interop.zkemkeeper.dll
+D:\CNS\TAS_MVC\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.csproj.ResolveComReference.cache
+D:\CNS\TAS_MVC\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.dll
+D:\CNS\TAS_MVC\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.pdb
+D:\Projects\CNS\TAS_MVC\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.dll
+D:\Projects\CNS\TAS_MVC\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.pdb
+D:\Projects\CNS\TAS_MVC\ReadersCommLibrary\bin\Debug\Interop.zkemkeeper.dll
+D:\Projects\CNS\TAS_MVC\ReadersCommLibrary\obj\Debug\Interop.zkemkeeper.dll
+D:\Projects\CNS\TAS_MVC\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.csproj.ResolveComReference.cache
+D:\Projects\CNS\TAS_MVC\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.dll
+D:\Projects\CNS\TAS_MVC\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.pdb
+D:\Projects\CNS\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\obj\Debug\Interop.zkemkeeper.dll
+D:\Projects\CNS\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.csproj.ResolveComReference.cache
+D:\Projects\CNS\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.pdb
+D:\Projects\CNS\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.dll
+D:\Projects\CNS\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.pdb
+D:\Projects\CNS\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\bin\Debug\Interop.zkemkeeper.dll
+D:\Projects\CNS\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.dll
+D:\Projects\CNS\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.csprojResolveAssemblyReference.cache
+D:\Projects\CNS\Working Projects\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.dll
+D:\Projects\CNS\Working Projects\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.pdb
+D:\Projects\CNS\Working Projects\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\bin\Debug\Interop.zkemkeeper.dll
+D:\Projects\CNS\Working Projects\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\obj\Debug\Interop.zkemkeeper.dll
+D:\Projects\CNS\Working Projects\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.csproj.ResolveComReference.cache
+D:\Projects\CNS\Working Projects\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.dll
+D:\Projects\CNS\Working Projects\TAS MVC VS 2010\TAS_MVC\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.pdb
+C:\Users\Ahsin\Documents\Visual Studio 2010\Projects\TASDownloadService\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.dll
+C:\Users\Ahsin\Documents\Visual Studio 2010\Projects\TASDownloadService\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.pdb
+C:\Users\Ahsin\Documents\Visual Studio 2010\Projects\TASDownloadService\ReadersCommLibrary\bin\Debug\Interop.zkemkeeper.dll
+C:\Users\Ahsin\Documents\Visual Studio 2010\Projects\TASDownloadService\ReadersCommLibrary\obj\Debug\Interop.zkemkeeper.dll
+C:\Users\Ahsin\Documents\Visual Studio 2010\Projects\TASDownloadService\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.csproj.ResolveComReference.cache
+C:\Users\Ahsin\Documents\Visual Studio 2010\Projects\TASDownloadService\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.dll
+C:\Users\Ahsin\Documents\Visual Studio 2010\Projects\TASDownloadService\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.pdb
+D:\Projects\CNS\Working Projects\Fatima Group WMS\TASDownloadService\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.dll
+D:\Projects\CNS\Working Projects\Fatima Group WMS\TASDownloadService\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.pdb
+D:\Projects\CNS\Working Projects\Fatima Group WMS\TASDownloadService\ReadersCommLibrary\bin\Debug\Interop.zkemkeeper.dll
+D:\Projects\CNS\Working Projects\Fatima Group WMS\TASDownloadService\ReadersCommLibrary\obj\Debug\Interop.zkemkeeper.dll
+D:\Projects\CNS\Working Projects\Fatima Group WMS\TASDownloadService\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.csproj.ResolveComReference.cache
+D:\Projects\CNS\Working Projects\Fatima Group WMS\TASDownloadService\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.dll
+D:\Projects\CNS\Working Projects\Fatima Group WMS\TASDownloadService\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.pdb
+D:\Projects\inven\Development\NHA WMS\TASDownloadService\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.dll
+D:\Projects\inven\Development\NHA WMS\TASDownloadService\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.pdb
+D:\Projects\inven\Development\NHA WMS\TASDownloadService\ReadersCommLibrary\bin\Debug\Interop.zkemkeeper.dll
+D:\Projects\inven\Development\NHA WMS\TASDownloadService\ReadersCommLibrary\obj\Debug\Interop.zkemkeeper.dll
+D:\Projects\inven\Development\NHA WMS\TASDownloadService\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.csproj.ResolveComReference.cache
+D:\Projects\inven\Development\NHA WMS\TASDownloadService\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.dll
+D:\Projects\inven\Development\NHA WMS\TASDownloadService\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.pdb
+C:\Inven Projects\NHA\TASDownloadServiceAsad\TASDownloadService\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.dll
+C:\Inven Projects\NHA\TASDownloadServiceAsad\TASDownloadService\ReadersCommLibrary\bin\Debug\ReadersCommLibrary.pdb
+C:\Inven Projects\NHA\TASDownloadServiceAsad\TASDownloadService\ReadersCommLibrary\bin\Debug\Interop.zkemkeeper.dll
+C:\Inven Projects\NHA\TASDownloadServiceAsad\TASDownloadService\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.csprojResolveAssemblyReference.cache
+C:\Inven Projects\NHA\TASDownloadServiceAsad\TASDownloadService\ReadersCommLibrary\obj\Debug\Interop.zkemkeeper.dll
+C:\Inven Projects\NHA\TASDownloadServiceAsad\TASDownloadService\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.csproj.ResolveComReference.cache
+C:\Inven Projects\NHA\TASDownloadServiceAsad\TASDownloadService\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.dll
+C:\Inven Projects\NHA\TASDownloadServiceAsad\TASDownloadService\ReadersCommLibrary\obj\Debug\ReadersCommLibrary.pdb

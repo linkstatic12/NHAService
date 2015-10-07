@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TAS2013ModelStoreContainer" CdmEntityContainer="TASDSEntities">
+    <EntitySetMapping Name="DownServiceLogs">
+      <EntityTypeMapping TypeName="TAS2013Model.DownServiceLog">
+        <MappingFragment StoreEntitySet="DownServiceLog">
+          <ScalarProperty Name="AuditID" ColumnName="AuditID" />
+          <ScalarProperty Name="ErrorCode" ColumnName="ErrorCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ReaderID" ColumnName="ReaderID" />
+          <ScalarProperty Name="Processed" ColumnName="Processed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Polls">
+      <EntityTypeMapping TypeName="TAS2013Model.Poll">
+        <MappingFragment StoreEntitySet="Poll">
+          <ScalarProperty Name="PollID" ColumnName="PollID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmpDate" ColumnName="EmpDate" />
+          <ScalarProperty Name="FpID" ColumnName="FpID" />
+          <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+          <ScalarProperty Name="EntDate" ColumnName="EntDate" />
+          <ScalarProperty Name="EntTime" ColumnName="EntTime" />
+          <ScalarProperty Name="RdrID" ColumnName="RdrID" />
+          <ScalarProperty Name="RdrDuty" ColumnName="RdrDuty" />
+          <ScalarProperty Name="Process" ColumnName="Process" />
+          <ScalarProperty Name="Split" ColumnName="Split" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emps">
+      <EntityTypeMapping TypeName="TAS2013Model.Emp">
+        <MappingFragment StoreEntitySet="Emp">
+          <ScalarProperty Name="CellNo" ColumnName="CellNo" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ProcessIn" ColumnName="ProcessIn" />
+          <ScalarProperty Name="ProcessAtt" ColumnName="ProcessAtt" />
+          <ScalarProperty Name="HomeAdd" ColumnName="HomeAdd" />
+          <ScalarProperty Name="JoinDate" ColumnName="JoinDate" />
+          <ScalarProperty Name="NicNo" ColumnName="NicNo" />
+          <ScalarProperty Name="FpID" ColumnName="FpID" />
+          <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="LocID" ColumnName="LocID" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DesigID" ColumnName="DesigID" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="EmpNo" ColumnName="EmpNo" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewReaders">
+      <EntityTypeMapping TypeName="TAS2013Model.ViewReader">
+        <MappingFragment StoreEntitySet="ViewReader">
+          <ScalarProperty Name="RdrTypeName" ColumnName="RdrTypeName" />
+          <ScalarProperty Name="RdrID" ColumnName="RdrID" />
+          <ScalarProperty Name="RdrName" ColumnName="RdrName" />
+          <ScalarProperty Name="Duty" ColumnName="Duty" />
+          <ScalarProperty Name="IpAdd" ColumnName="IpAdd" />
+          <ScalarProperty Name="IpPort" ColumnName="IpPort" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="LocName" ColumnName="LocName" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,1865 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TAS2013Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="TAS2013ModelStoreContainer">
+    <EntitySet Name="AccessEmp" EntityType="TAS2013Model.Store.AccessEmp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AttCodes" EntityType="TAS2013Model.Store.AttCodes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AttData" EntityType="TAS2013Model.Store.AttData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AttDataManEdit" EntityType="TAS2013Model.Store.AttDataManEdit" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AttMnData" EntityType="TAS2013Model.Store.AttMnData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AttMnDataPer" EntityType="TAS2013Model.Store.AttMnDataPer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AttProcess" EntityType="TAS2013Model.Store.AttProcess" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AuditForm" EntityType="TAS2013Model.Store.AuditForm" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AuditLog" EntityType="TAS2013Model.Store.AuditLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AuditOperation" EntityType="TAS2013Model.Store.AuditOperation" store:Type="Tables" store:Schema="dbo" store:Name="AuditOperation">
+      <DefiningQuery>SELECT 
+      [AuditOperation].[OperationID] AS [OperationID], 
+      [AuditOperation].[OperationName] AS [OperationName]
+      FROM [dbo].[AuditOperation] AS [AuditOperation]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Card" EntityType="TAS2013Model.Store.Card" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CardType" EntityType="TAS2013Model.Store.CardType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Category" EntityType="TAS2013Model.Store.Category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="City" EntityType="TAS2013Model.Store.City" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Company" EntityType="TAS2013Model.Store.Company" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Crew" EntityType="TAS2013Model.Store.Crew" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DaysName" EntityType="TAS2013Model.Store.DaysName" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Department" EntityType="TAS2013Model.Store.Department" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Designation" EntityType="TAS2013Model.Store.Designation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Division" EntityType="TAS2013Model.Store.Division" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DownloadTime" EntityType="TAS2013Model.Store.DownloadTime" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DutyCode" EntityType="TAS2013Model.Store.DutyCode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DutyTime" EntityType="TAS2013Model.Store.DutyTime" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Emp" EntityType="TAS2013Model.Store.Emp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmpAccess" EntityType="TAS2013Model.Store.EmpAccess" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmpFace" EntityType="TAS2013Model.Store.EmpFace" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmpFp" EntityType="TAS2013Model.Store.EmpFp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmpPhoto" EntityType="TAS2013Model.Store.EmpPhoto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmpPresence" EntityType="TAS2013Model.Store.EmpPresence" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmpRdr" EntityType="TAS2013Model.Store.EmpRdr" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmpType" EntityType="TAS2013Model.Store.EmpType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Grade" EntityType="TAS2013Model.Store.Grade" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Holiday" EntityType="TAS2013Model.Store.Holiday" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="JobCard" EntityType="TAS2013Model.Store.JobCard" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="JobCardApp" EntityType="TAS2013Model.Store.JobCardApp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="JobCardEmp" EntityType="TAS2013Model.Store.JobCardEmp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="JobTitle" EntityType="TAS2013Model.Store.JobTitle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Location" EntityType="TAS2013Model.Store.Location" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LvApplication" EntityType="TAS2013Model.Store.LvApplication" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LvConsumed" EntityType="TAS2013Model.Store.LvConsumed" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LvData" EntityType="TAS2013Model.Store.LvData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LvQuota" EntityType="TAS2013Model.Store.LvQuota" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LvShort" EntityType="TAS2013Model.Store.LvShort" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LvType" EntityType="TAS2013Model.Store.LvType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Option" EntityType="TAS2013Model.Store.Option" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PollData" EntityType="TAS2013Model.Store.PollData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RdrDutyCode" EntityType="TAS2013Model.Store.RdrDutyCode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RdrEventLog" EntityType="TAS2013Model.Store.RdrEventLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Reader" EntityType="TAS2013Model.Store.Reader" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ReaderType" EntityType="TAS2013Model.Store.ReaderType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ReaderVendor" EntityType="TAS2013Model.Store.ReaderVendor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Reason" EntityType="TAS2013Model.Store.Reason" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Region" EntityType="TAS2013Model.Store.Region" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Roster" EntityType="TAS2013Model.Store.Roster" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RosterApp" EntityType="TAS2013Model.Store.RosterApp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RosterDetail" EntityType="TAS2013Model.Store.RosterDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RosterType" EntityType="TAS2013Model.Store.RosterType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Section" EntityType="TAS2013Model.Store.Section" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ServiceLog" EntityType="TAS2013Model.Store.ServiceLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Shift" EntityType="TAS2013Model.Store.Shift" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Site" EntityType="TAS2013Model.Store.Site" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="TAS2013Model.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="TAS2013Model.Store.User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserModule" EntityType="TAS2013Model.Store.UserModule" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserRole" EntityType="TAS2013Model.Store.UserRole" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ZTable" EntityType="TAS2013Model.Store.ZTable" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AttData_Emp" Association="TAS2013Model.Store.FK_AttData_Emp">
+      <End Role="Emp" EntitySet="Emp" />
+      <End Role="AttData" EntitySet="AttData" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttDataManEdit_Emp" Association="TAS2013Model.Store.FK_AttDataManEdit_Emp">
+      <End Role="Emp" EntitySet="Emp" />
+      <End Role="AttDataManEdit" EntitySet="AttDataManEdit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttDataManEdit_User" Association="TAS2013Model.Store.FK_AttDataManEdit_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="AttDataManEdit" EntitySet="AttDataManEdit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttMnDataPer_Emp" Association="TAS2013Model.Store.FK_AttMnDataPer_Emp">
+      <End Role="Emp" EntitySet="Emp" />
+      <End Role="AttMnDataPer" EntitySet="AttMnDataPer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuditLog_User" Association="TAS2013Model.Store.FK_AuditLog_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="AuditLog" EntitySet="AuditLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Card_CardType" Association="TAS2013Model.Store.FK_Card_CardType">
+      <End Role="CardType" EntitySet="CardType" />
+      <End Role="Card" EntitySet="Card" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Card_Emp" Association="TAS2013Model.Store.FK_Card_Emp">
+      <End Role="Emp" EntitySet="Emp" />
+      <End Role="Card" EntitySet="Card" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Card_Reason" Association="TAS2013Model.Store.FK_Card_Reason">
+      <End Role="Reason" EntitySet="Reason" />
+      <End Role="Card" EntitySet="Card" />
+    </AssociationSet>
+    <AssociationSet Name="FK_City_Region" Association="TAS2013Model.Store.FK_City_Region">
+      <End Role="Region" EntitySet="Region" />
+      <End Role="City" EntitySet="City" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Department_Division" Association="TAS2013Model.Store.FK_Department_Division">
+      <End Role="Division" EntitySet="Division" />
+      <End Role="Department" EntitySet="Department" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_Crew" Association="TAS2013Model.Store.FK_Emp_Crew">
+      <End Role="Crew" EntitySet="Crew" />
+      <End Role="Emp" EntitySet="Emp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_Designation1" Association="TAS2013Model.Store.FK_Emp_Designation1">
+      <End Role="Designation" EntitySet="Designation" />
+      <End Role="Emp" EntitySet="Emp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_Grade" Association="TAS2013Model.Store.FK_Emp_Grade">
+      <End Role="Grade" EntitySet="Grade" />
+      <End Role="Emp" EntitySet="Emp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_JobTitle" Association="TAS2013Model.Store.FK_Emp_JobTitle">
+      <End Role="JobTitle" EntitySet="JobTitle" />
+      <End Role="Emp" EntitySet="Emp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_Location" Association="TAS2013Model.Store.FK_Emp_Location">
+      <End Role="Location" EntitySet="Location" />
+      <End Role="Emp" EntitySet="Emp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_Section" Association="TAS2013Model.Store.FK_Emp_Section">
+      <End Role="Section" EntitySet="Section" />
+      <End Role="Emp" EntitySet="Emp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_ShiftID" Association="TAS2013Model.Store.FK_Emp_ShiftID">
+      <End Role="Shift" EntitySet="Shift" />
+      <End Role="Emp" EntitySet="Emp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_TypeID" Association="TAS2013Model.Store.FK_Emp_TypeID">
+      <End Role="EmpType" EntitySet="EmpType" />
+      <End Role="Emp" EntitySet="Emp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpAccess_Emp" Association="TAS2013Model.Store.FK_EmpAccess_Emp">
+      <End Role="Emp" EntitySet="Emp" />
+      <End Role="EmpAccess" EntitySet="EmpAccess" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpFace_Emp" Association="TAS2013Model.Store.FK_EmpFace_Emp">
+      <End Role="Emp" EntitySet="Emp" />
+      <End Role="EmpFace" EntitySet="EmpFace" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpFp_Emp" Association="TAS2013Model.Store.FK_EmpFp_Emp">
+      <End Role="Emp" EntitySet="Emp" />
+      <End Role="EmpFp" EntitySet="EmpFp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpPhoto_Emp1" Association="TAS2013Model.Store.FK_EmpPhoto_Emp1">
+      <End Role="Emp" EntitySet="Emp" />
+      <End Role="EmpPhoto" EntitySet="EmpPhoto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpRdr_Reader" Association="TAS2013Model.Store.FK_EmpRdr_Reader">
+      <End Role="Reader" EntitySet="Reader" />
+      <End Role="EmpRdr" EntitySet="EmpRdr" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpType_Category" Association="TAS2013Model.Store.FK_EmpType_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="EmpType" EntitySet="EmpType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Grade_Company" Association="TAS2013Model.Store.FK_Grade_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Grade" EntitySet="Grade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Location_Site" Association="TAS2013Model.Store.FK_Location_Site">
+      <End Role="Site" EntitySet="Site" />
+      <End Role="Location" EntitySet="Location" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvApplication_Emp" Association="TAS2013Model.Store.FK_LvApplication_Emp">
+      <End Role="Emp" EntitySet="Emp" />
+      <End Role="LvApplication" EntitySet="LvApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvApplication_User" Association="TAS2013Model.Store.FK_LvApplication_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="LvApplication" EntitySet="LvApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvApplications_LvType" Association="TAS2013Model.Store.FK_LvApplications_LvType">
+      <End Role="LvType" EntitySet="LvType" />
+      <End Role="LvApplication" EntitySet="LvApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvData_LvApplications" Association="TAS2013Model.Store.FK_LvData_LvApplications">
+      <End Role="LvApplication" EntitySet="LvApplication" />
+      <End Role="LvData" EntitySet="LvData" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvData_LvCode" Association="TAS2013Model.Store.FK_LvData_LvCode">
+      <End Role="LvType" EntitySet="LvType" />
+      <End Role="LvData" EntitySet="LvData" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvQuota_Emp" Association="TAS2013Model.Store.FK_LvQuota_Emp">
+      <End Role="Emp" EntitySet="Emp" />
+      <End Role="LvQuota" EntitySet="LvQuota" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvShort_Emp" Association="TAS2013Model.Store.FK_LvShort_Emp">
+      <End Role="Emp" EntitySet="Emp" />
+      <End Role="LvShort" EntitySet="LvShort" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reader_Company" Association="TAS2013Model.Store.FK_Reader_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Reader" EntitySet="Reader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reader_Location" Association="TAS2013Model.Store.FK_Reader_Location">
+      <End Role="Location" EntitySet="Location" />
+      <End Role="Reader" EntitySet="Reader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reader_RdrDutyCode" Association="TAS2013Model.Store.FK_Reader_RdrDutyCode">
+      <End Role="RdrDutyCode" EntitySet="RdrDutyCode" />
+      <End Role="Reader" EntitySet="Reader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reader_RdrID" Association="TAS2013Model.Store.FK_Reader_RdrID">
+      <End Role="Reader" EntitySet="Reader" />
+      <End Role="PollData" EntitySet="PollData" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reader_ReaderType1" Association="TAS2013Model.Store.FK_Reader_ReaderType1">
+      <End Role="ReaderType" EntitySet="ReaderType" />
+      <End Role="Reader" EntitySet="Reader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReaderType_ReaderVendor" Association="TAS2013Model.Store.FK_ReaderType_ReaderVendor">
+      <End Role="ReaderVendor" EntitySet="ReaderVendor" />
+      <End Role="ReaderType" EntitySet="ReaderType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Section_Department" Association="TAS2013Model.Store.FK_Section_Department">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Section" EntitySet="Section" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Shift_DaysName" Association="TAS2013Model.Store.FK_Shift_DaysName">
+      <End Role="DaysName" EntitySet="DaysName" />
+      <End Role="Shift" EntitySet="Shift" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Shift_DaysName1" Association="TAS2013Model.Store.FK_Shift_DaysName1">
+      <End Role="DaysName" EntitySet="DaysName" />
+      <End Role="Shift" EntitySet="Shift" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Shift_RosterType" Association="TAS2013Model.Store.FK_Shift_RosterType">
+      <End Role="RosterType" EntitySet="RosterType" />
+      <End Role="Shift" EntitySet="Shift" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Site_City" Association="TAS2013Model.Store.FK_Site_City">
+      <End Role="City" EntitySet="City" />
+      <End Role="Site" EntitySet="Site" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_UserRole1" Association="TAS2013Model.Store.FK_User_UserRole1">
+      <End Role="UserRole" EntitySet="UserRole" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AccessEmp">
+    <Key>
+      <PropertyRef Name="AccessID" />
+    </Key>
+    <Property Name="AccessID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ReaderID" Type="int" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="Permission" Type="bit" />
+    <Property Name="CreateDate" Type="date" />
+    <Property Name="Processed" Type="bit" />
+  </EntityType>
+  <EntityType Name="AttCodes">
+    <Key>
+      <PropertyRef Name="AttID" />
+    </Key>
+    <Property Name="AttID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="AttDesc" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AttData">
+    <Key>
+      <PropertyRef Name="EmpDate" />
+    </Key>
+    <Property Name="EmpDate" Type="nvarchar" Nullable="false" MaxLength="15" />
+    <Property Name="AttDate" Type="date" />
+    <Property Name="EmpNo" Type="nvarchar" MaxLength="15" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="DutyCode" Type="char" MaxLength="1" />
+    <Property Name="DutyTime" Type="time" />
+    <Property Name="TimeIn" Type="datetime" />
+    <Property Name="TimeOut" Type="datetime" />
+    <Property Name="WorkMin" Type="smallint" />
+    <Property Name="LateIn" Type="smallint" />
+    <Property Name="LateOut" Type="smallint" />
+    <Property Name="EarlyIn" Type="smallint" />
+    <Property Name="EarlyOut" Type="smallint" />
+    <Property Name="OTMin" Type="smallint" />
+    <Property Name="GZOTMin" Type="smallint" />
+    <Property Name="BreakMin" Type="smallint" />
+    <Property Name="SLMin" Type="time" />
+    <Property Name="StatusP" Type="bit" />
+    <Property Name="StatusAB" Type="bit" />
+    <Property Name="StatusLI" Type="bit" />
+    <Property Name="StatusLO" Type="bit" />
+    <Property Name="StatusEI" Type="bit" />
+    <Property Name="StatusEO" Type="bit" />
+    <Property Name="StatusOT" Type="bit" />
+    <Property Name="StatusGZOT" Type="bit" />
+    <Property Name="StatusGZ" Type="bit" />
+    <Property Name="StatusDO" Type="bit" />
+    <Property Name="StatusHD" Type="bit" />
+    <Property Name="StatusSL" Type="bit" />
+    <Property Name="StatusOD" Type="bit" />
+    <Property Name="StatusHL" Type="bit" />
+    <Property Name="StatusLeave" Type="bit" />
+    <Property Name="StatusMN" Type="bit" />
+    <Property Name="StatusIN" Type="bit" />
+    <Property Name="StatusBreak" Type="bit" />
+    <Property Name="ShifMin" Type="smallint" />
+    <Property Name="ShfSplit" Type="bit" />
+    <Property Name="ProcessIn" Type="bit" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="Tin0" Type="datetime" />
+    <Property Name="Tout0" Type="datetime" />
+    <Property Name="Tin1" Type="datetime" />
+    <Property Name="Tout1" Type="datetime" />
+    <Property Name="Tin2" Type="datetime" />
+    <Property Name="Tout2" Type="datetime" />
+    <Property Name="Tin3" Type="datetime" />
+    <Property Name="Tout3" Type="datetime" />
+    <Property Name="Tin4" Type="datetime" />
+    <Property Name="Tout4" Type="datetime" />
+    <Property Name="Tin5" Type="datetime" />
+    <Property Name="Tout5" Type="datetime" />
+    <Property Name="Tin6" Type="datetime" />
+    <Property Name="Tout6" Type="datetime" />
+    <Property Name="Tin7" Type="datetime" />
+    <Property Name="Tout7" Type="datetime" />
+    <Property Name="Tin8" Type="datetime" />
+    <Property Name="Tout8" Type="datetime" />
+    <Property Name="Tin9" Type="datetime" />
+    <Property Name="Tout9" Type="datetime" />
+    <Property Name="Tin10" Type="datetime" />
+    <Property Name="Tout10" Type="datetime" />
+    <Property Name="Tin11" Type="datetime" />
+    <Property Name="Tout11" Type="datetime" />
+    <Property Name="Tin12" Type="datetime" />
+    <Property Name="Tout12" Type="datetime" />
+    <Property Name="Tin13" Type="datetime" />
+    <Property Name="Tout13" Type="datetime" />
+    <Property Name="Tin14" Type="datetime" />
+    <Property Name="Tout14" Type="datetime" />
+    <Property Name="Tin15" Type="datetime" />
+    <Property Name="Tout15" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AttDataManEdit">
+    <Key>
+      <PropertyRef Name="AttEditID" />
+    </Key>
+    <Property Name="AttEditID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="EditDateTime" Type="datetime" />
+    <Property Name="OldTimeIn" Type="datetime" />
+    <Property Name="OldTimeOut" Type="datetime" />
+    <Property Name="NewTimeIn" Type="datetime" />
+    <Property Name="NewTimeOut" Type="datetime" />
+    <Property Name="EmpDate" Type="nvarchar" MaxLength="12" />
+    <Property Name="Process" Type="bit" />
+    <Property Name="OldDutyCode" Type="nchar" MaxLength="1" />
+    <Property Name="OldDutyTime" Type="time" />
+    <Property Name="NewDutyCode" Type="nchar" MaxLength="1" />
+    <Property Name="NewDutyTime" Type="time" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="CompanyID" Type="smallint" />
+    <Property Name="OldRemarks" Type="nvarchar" MaxLength="50" />
+    <Property Name="NewRemarks" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AttMnData">
+    <Key>
+      <PropertyRef Name="EmpMonth" />
+    </Key>
+    <Property Name="Period" Type="nvarchar" MaxLength="6" />
+    <Property Name="EmpMonth" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="EmpNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmpName" Type="nvarchar" MaxLength="50" />
+    <Property Name="D1" Type="char" MaxLength="1" />
+    <Property Name="D2" Type="char" MaxLength="1" />
+    <Property Name="D3" Type="char" MaxLength="1" />
+    <Property Name="D4" Type="char" MaxLength="1" />
+    <Property Name="D5" Type="char" MaxLength="1" />
+    <Property Name="D6" Type="char" MaxLength="1" />
+    <Property Name="D7" Type="char" MaxLength="1" />
+    <Property Name="D8" Type="char" MaxLength="1" />
+    <Property Name="D9" Type="char" MaxLength="1" />
+    <Property Name="D10" Type="char" MaxLength="1" />
+    <Property Name="D11" Type="char" MaxLength="1" />
+    <Property Name="D12" Type="char" MaxLength="1" />
+    <Property Name="D13" Type="char" MaxLength="1" />
+    <Property Name="D14" Type="char" MaxLength="1" />
+    <Property Name="D15" Type="char" MaxLength="1" />
+    <Property Name="D16" Type="char" MaxLength="1" />
+    <Property Name="D17" Type="char" MaxLength="1" />
+    <Property Name="D18" Type="char" MaxLength="1" />
+    <Property Name="D19" Type="char" MaxLength="1" />
+    <Property Name="D20" Type="char" MaxLength="1" />
+    <Property Name="D21" Type="char" MaxLength="1" />
+    <Property Name="D22" Type="char" MaxLength="1" />
+    <Property Name="D23" Type="char" MaxLength="1" />
+    <Property Name="D24" Type="char" MaxLength="1" />
+    <Property Name="D25" Type="char" MaxLength="1" />
+    <Property Name="D26" Type="char" MaxLength="1" />
+    <Property Name="D27" Type="char" MaxLength="1" />
+    <Property Name="D28" Type="char" MaxLength="1" />
+    <Property Name="D29" Type="char" MaxLength="1" />
+    <Property Name="D30" Type="char" MaxLength="1" />
+    <Property Name="D31" Type="char" MaxLength="1" />
+    <Property Name="TotalDays" Type="tinyint" />
+    <Property Name="WorkDays" Type="float" />
+    <Property Name="PreDays" Type="float" />
+    <Property Name="AbDays" Type="float" />
+    <Property Name="RestDays" Type="tinyint" />
+    <Property Name="GZDays" Type="tinyint" />
+    <Property Name="LeaveDays" Type="tinyint" />
+    <Property Name="HalfLeavesDay" Type="float" />
+    <Property Name="OfficialDutyDays" Type="tinyint" />
+    <Property Name="TEarlyIn" Type="smallint" />
+    <Property Name="TEarlyOut" Type="smallint" />
+    <Property Name="TLateIn" Type="smallint" />
+    <Property Name="TLateOut" Type="smallint" />
+    <Property Name="TWorkTime" Type="smallint" />
+    <Property Name="TNOT" Type="smallint" />
+    <Property Name="TGZOT" Type="smallint" />
+    <Property Name="ExpectedWrkTime" Type="smallint" />
+    <Property Name="OT1" Type="smallint" />
+    <Property Name="OT2" Type="smallint" />
+    <Property Name="OT3" Type="smallint" />
+    <Property Name="OT4" Type="smallint" />
+    <Property Name="OT5" Type="smallint" />
+    <Property Name="OT6" Type="smallint" />
+    <Property Name="OT7" Type="smallint" />
+    <Property Name="OT8" Type="smallint" />
+    <Property Name="OT9" Type="smallint" />
+    <Property Name="OT10" Type="smallint" />
+    <Property Name="OT11" Type="smallint" />
+    <Property Name="OT12" Type="smallint" />
+    <Property Name="OT13" Type="smallint" />
+    <Property Name="OT14" Type="smallint" />
+    <Property Name="OT15" Type="smallint" />
+    <Property Name="OT16" Type="smallint" />
+    <Property Name="OT17" Type="smallint" />
+    <Property Name="OT18" Type="smallint" />
+    <Property Name="OT19" Type="smallint" />
+    <Property Name="OT20" Type="smallint" />
+    <Property Name="OT21" Type="smallint" />
+    <Property Name="OT22" Type="smallint" />
+    <Property Name="OT23" Type="smallint" />
+    <Property Name="OT24" Type="smallint" />
+    <Property Name="OT25" Type="smallint" />
+    <Property Name="OT26" Type="smallint" />
+    <Property Name="OT27" Type="smallint" />
+    <Property Name="OT28" Type="smallint" />
+    <Property Name="OT29" Type="smallint" />
+    <Property Name="OT30" Type="smallint" />
+    <Property Name="OT31" Type="smallint" />
+    <Property Name="L1" Type="nvarchar" MaxLength="5" />
+    <Property Name="L2" Type="nvarchar" MaxLength="5" />
+    <Property Name="L3" Type="nvarchar" MaxLength="5" />
+    <Property Name="L4" Type="nvarchar" MaxLength="5" />
+    <Property Name="L5" Type="nvarchar" MaxLength="5" />
+    <Property Name="L6" Type="nvarchar" MaxLength="5" />
+    <Property Name="L7" Type="nvarchar" MaxLength="5" />
+    <Property Name="L8" Type="nvarchar" MaxLength="5" />
+    <Property Name="L9" Type="nvarchar" MaxLength="5" />
+    <Property Name="L10" Type="nvarchar" MaxLength="5" />
+    <Property Name="L11" Type="nvarchar" MaxLength="5" />
+    <Property Name="L12" Type="nvarchar" MaxLength="5" />
+    <Property Name="L13" Type="nvarchar" MaxLength="5" />
+    <Property Name="L14" Type="nvarchar" MaxLength="5" />
+    <Property Name="L15" Type="nvarchar" MaxLength="5" />
+    <Property Name="L16" Type="nvarchar" MaxLength="5" />
+    <Property Name="L17" Type="nvarchar" MaxLength="5" />
+    <Property Name="L18" Type="nvarchar" MaxLength="5" />
+    <Property Name="L19" Type="nvarchar" MaxLength="5" />
+    <Property Name="L20" Type="nvarchar" MaxLength="5" />
+    <Property Name="L21" Type="nvarchar" MaxLength="5" />
+    <Property Name="L22" Type="nvarchar" MaxLength="5" />
+    <Property Name="L23" Type="nvarchar" MaxLength="5" />
+    <Property Name="L24" Type="nvarchar" MaxLength="5" />
+    <Property Name="L25" Type="nvarchar" MaxLength="5" />
+    <Property Name="L26" Type="nvarchar" MaxLength="5" />
+    <Property Name="L27" Type="nvarchar" MaxLength="5" />
+    <Property Name="L28" Type="nvarchar" MaxLength="5" />
+    <Property Name="L29" Type="nvarchar" MaxLength="5" />
+    <Property Name="L30" Type="nvarchar" MaxLength="5" />
+    <Property Name="L31" Type="nvarchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="AttMnDataPer">
+    <Key>
+      <PropertyRef Name="EmpMonth" />
+    </Key>
+    <Property Name="Period" Type="nvarchar" MaxLength="6" />
+    <Property Name="EmpMonth" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="EmpNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="EmpName" Type="nvarchar" MaxLength="50" />
+    <Property Name="D21" Type="char" MaxLength="1" />
+    <Property Name="D22" Type="char" MaxLength="1" />
+    <Property Name="D23" Type="char" MaxLength="1" />
+    <Property Name="D24" Type="char" MaxLength="1" />
+    <Property Name="D25" Type="char" MaxLength="1" />
+    <Property Name="D26" Type="char" MaxLength="1" />
+    <Property Name="D27" Type="char" MaxLength="1" />
+    <Property Name="D28" Type="char" MaxLength="1" />
+    <Property Name="D29" Type="char" MaxLength="1" />
+    <Property Name="D30" Type="char" MaxLength="1" />
+    <Property Name="D31" Type="char" MaxLength="1" />
+    <Property Name="D1" Type="char" MaxLength="1" />
+    <Property Name="D2" Type="char" MaxLength="1" />
+    <Property Name="D3" Type="char" MaxLength="1" />
+    <Property Name="D4" Type="char" MaxLength="1" />
+    <Property Name="D5" Type="char" MaxLength="1" />
+    <Property Name="D6" Type="char" MaxLength="1" />
+    <Property Name="D7" Type="char" MaxLength="1" />
+    <Property Name="D8" Type="char" MaxLength="1" />
+    <Property Name="D9" Type="char" MaxLength="1" />
+    <Property Name="D10" Type="char" MaxLength="1" />
+    <Property Name="D11" Type="char" MaxLength="1" />
+    <Property Name="D12" Type="char" MaxLength="1" />
+    <Property Name="D13" Type="char" MaxLength="1" />
+    <Property Name="D14" Type="char" MaxLength="1" />
+    <Property Name="D15" Type="char" MaxLength="1" />
+    <Property Name="D16" Type="char" MaxLength="1" />
+    <Property Name="D17" Type="char" MaxLength="1" />
+    <Property Name="D18" Type="char" MaxLength="1" />
+    <Property Name="D19" Type="char" MaxLength="1" />
+    <Property Name="D20" Type="char" MaxLength="1" />
+    <Property Name="TotalDays" Type="tinyint" />
+    <Property Name="WorkDays" Type="tinyint" />
+    <Property Name="PreDays" Type="tinyint" />
+    <Property Name="AbDays" Type="tinyint" />
+    <Property Name="RestDays" Type="tinyint" />
+    <Property Name="GZDays" Type="tinyint" />
+    <Property Name="LeaveDays" Type="tinyint" />
+    <Property Name="OfficialDutyDays" Type="tinyint" />
+    <Property Name="TEarlyIn" Type="smallint" />
+    <Property Name="TEarlyOut" Type="smallint" />
+    <Property Name="TLateIn" Type="smallint" />
+    <Property Name="TLateOut" Type="smallint" />
+    <Property Name="TWorkTime" Type="smallint" />
+    <Property Name="TNOT" Type="smallint" />
+    <Property Name="TGZOT" Type="smallint" />
+    <Property Name="ExpectedWrkTime" Type="smallint" />
+    <Property Name="OT1" Type="smallint" />
+    <Property Name="OT2" Type="smallint" />
+    <Property Name="OT3" Type="smallint" />
+    <Property Name="OT4" Type="smallint" />
+    <Property Name="OT5" Type="smallint" />
+    <Property Name="OT6" Type="smallint" />
+    <Property Name="OT7" Type="smallint" />
+    <Property Name="OT8" Type="smallint" />
+    <Property Name="OT9" Type="smallint" />
+    <Property Name="OT10" Type="smallint" />
+    <Property Name="OT11" Type="smallint" />
+    <Property Name="OT12" Type="smallint" />
+    <Property Name="OT13" Type="smallint" />
+    <Property Name="OT14" Type="smallint" />
+    <Property Name="OT15" Type="smallint" />
+    <Property Name="OT16" Type="smallint" />
+    <Property Name="OT17" Type="smallint" />
+    <Property Name="OT18" Type="smallint" />
+    <Property Name="OT19" Type="smallint" />
+    <Property Name="OT20" Type="smallint" />
+    <Property Name="OT21" Type="smallint" />
+    <Property Name="OT22" Type="smallint" />
+    <Property Name="OT23" Type="smallint" />
+    <Property Name="OT24" Type="smallint" />
+    <Property Name="OT25" Type="smallint" />
+    <Property Name="OT26" Type="smallint" />
+    <Property Name="OT27" Type="smallint" />
+    <Property Name="OT28" Type="smallint" />
+    <Property Name="OT29" Type="smallint" />
+    <Property Name="OT30" Type="smallint" />
+    <Property Name="OT31" Type="smallint" />
+  </EntityType>
+  <EntityType Name="AttProcess">
+    <Key>
+      <PropertyRef Name="ProcessDate" />
+    </Key>
+    <Property Name="ProcessDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AuditForm">
+    <Key>
+      <PropertyRef Name="FormID" />
+    </Key>
+    <Property Name="FormID" Type="smallint" Nullable="false" />
+    <Property Name="FormName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AuditLog">
+    <Key>
+      <PropertyRef Name="AuditID" />
+    </Key>
+    <Property Name="AuditID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AuditDateTime" Type="datetime" />
+    <Property Name="AuditUserID" Type="int" />
+    <Property Name="FormID" Type="smallint" />
+    <Property Name="OperationID" Type="smallint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'TAS2013.dbo.AuditOperation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="AuditOperation">
+    <Key>
+      <PropertyRef Name="OperationID" />
+    </Key>
+    <Property Name="OperationID" Type="smallint" Nullable="false" />
+    <Property Name="OperationName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Card">
+    <Key>
+      <PropertyRef Name="CardID" />
+    </Key>
+    <Property Name="CardID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="CardNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserID" Type="smallint" />
+    <Property Name="DateOfIssue" Type="datetime" />
+    <Property Name="DateOfExpiry" Type="datetime" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="100" />
+    <Property Name="CardStatus" Type="bit" />
+    <Property Name="ReasonID" Type="tinyint" />
+    <Property Name="CardTypeID" Type="tinyint" />
+    <Property Name="active" Type="bit" />
+  </EntityType>
+  <EntityType Name="CardType">
+    <Key>
+      <PropertyRef Name="CardTypeID" />
+    </Key>
+    <Property Name="CardTypeID" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CardTypeName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CatID" />
+    </Key>
+    <Property Name="CatID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CatName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegionID" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompID" />
+    </Key>
+    <Property Name="CompID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+    <Property Name="TelNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Crew">
+    <Key>
+      <PropertyRef Name="CrewID" />
+    </Key>
+    <Property Name="CrewID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CrewName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="DaysName">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DeptID" />
+    </Key>
+    <Property Name="DeptID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DeptName" Type="nvarchar" MaxLength="100" />
+    <Property Name="DivID" Type="smallint" />
+    <Property Name="CompanyID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Designation">
+    <Key>
+      <PropertyRef Name="DesignationID" />
+    </Key>
+    <Property Name="DesignationID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DesignationName" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompanyID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Division">
+    <Key>
+      <PropertyRef Name="DivisionID" />
+    </Key>
+    <Property Name="DivisionID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DivisionName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="DownloadTime">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DownTime" Type="time" />
+  </EntityType>
+  <EntityType Name="DutyCode">
+    <Key>
+      <PropertyRef Name="CodeID" />
+    </Key>
+    <Property Name="CodeID" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DutyName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DutyTime">
+    <Key>
+      <PropertyRef Name="TimeSample" />
+    </Key>
+    <Property Name="TimeSample" Type="char" Nullable="false" MaxLength="4" />
+  </EntityType>
+  <EntityType Name="Emp">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="EmpID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmpNo" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="EmpName" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="DesigID" Type="int" />
+    <Property Name="JobID" Type="smallint" />
+    <Property Name="Gender" Type="tinyint" />
+    <Property Name="ShiftID" Type="tinyint" />
+    <Property Name="LocID" Type="smallint" />
+    <Property Name="TypeID" Type="tinyint" />
+    <Property Name="GradeID" Type="tinyint" />
+    <Property Name="SecID" Type="smallint" />
+    <Property Name="CardNo" Type="char" MaxLength="10" />
+    <Property Name="FpID" Type="int" />
+    <Property Name="PinCode" Type="char" MaxLength="4" />
+    <Property Name="NicNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="FatherName" Type="nvarchar" MaxLength="50" />
+    <Property Name="BloodGroup" Type="nvarchar" MaxLength="6" />
+    <Property Name="BirthDate" Type="date" />
+    <Property Name="MarStatus" Type="nvarchar" MaxLength="15" />
+    <Property Name="JoinDate" Type="date" />
+    <Property Name="ValidDate" Type="date" />
+    <Property Name="IssueDate" Type="date" />
+    <Property Name="ResignDate" Type="date" />
+    <Property Name="HomeAdd" Type="varchar" MaxLength="250" />
+    <Property Name="ProcessAtt" Type="bit" Nullable="false" />
+    <Property Name="ProcessIn" Type="bit" Nullable="false" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="PhoneNo" Type="nvarchar" MaxLength="15" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="300" />
+    <Property Name="Email" Type="nvarchar" MaxLength="15" />
+    <Property Name="CellNo" Type="nvarchar" MaxLength="15" />
+    <Property Name="CrewID" Type="smallint" />
+    <Property Name="FlagFP" Type="bit" />
+    <Property Name="FlagFace" Type="bit" />
+    <Property Name="FlagCard" Type="bit" />
+    <Property Name="EmpImageID" Type="int" />
+    <Property Name="CompanyID" Type="smallint" />
+    <Property Name="Presence" Type="bit" />
+    <Property Name="ReaderID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="EmpAccess">
+    <Key>
+      <PropertyRef Name="AccessID" />
+    </Key>
+    <Property Name="AccessID" Type="int" Nullable="false" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="RdrID" Type="tinyint" />
+    <Property Name="Date" Type="date" />
+    <Property Name="Access" Type="bit" />
+  </EntityType>
+  <EntityType Name="EmpFace">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="Face1" Type="nvarchar(max)" />
+    <Property Name="Length" Type="int" />
+  </EntityType>
+  <EntityType Name="EmpFp">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="Fp1" Type="nvarchar" MaxLength="3000" />
+    <Property Name="Fp2" Type="nvarchar" MaxLength="3000" />
+    <Property Name="Fp3" Type="nvarchar" MaxLength="3000" />
+    <Property Name="Fp4" Type="nvarchar" MaxLength="3000" />
+    <Property Name="Fp5" Type="nvarchar" MaxLength="3000" />
+    <Property Name="Fp6" Type="nvarchar" MaxLength="3000" />
+  </EntityType>
+  <EntityType Name="EmpPhoto">
+    <Key>
+      <PropertyRef Name="PhotoID" />
+    </Key>
+    <Property Name="PhotoID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmpPic" Type="image" />
+    <Property Name="EmpID" Type="int" />
+  </EntityType>
+  <EntityType Name="EmpPresence">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="date" />
+    <Property Name="TimeIn" Type="time" />
+    <Property Name="TimeOut" Type="time" />
+    <Property Name="ReaderIn" Type="smallint" />
+    <Property Name="ReaderOut" Type="smallint" />
+    <Property Name="StatusIn" Type="bit" />
+    <Property Name="StatusOut" Type="bit" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <EntityType Name="EmpRdr">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="RdrID" Type="smallint" Nullable="false" />
+    <Property Name="DateModified" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EmpType">
+    <Key>
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="TypeID" Type="tinyint" Nullable="false" />
+    <Property Name="TypeName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="CatID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Grade">
+    <Key>
+      <PropertyRef Name="GradeID" />
+    </Key>
+    <Property Name="GradeID" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="GradeName" Type="nvarchar" MaxLength="20" />
+    <Property Name="CompID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Holiday">
+    <Key>
+      <PropertyRef Name="HolID" />
+    </Key>
+    <Property Name="HolID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="HolDate" Type="date" Nullable="false" />
+    <Property Name="HolDesc" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="JobCard">
+    <Key>
+      <PropertyRef Name="WorkCardID" />
+    </Key>
+    <Property Name="WorkCardID" Type="smallint" Nullable="false" />
+    <Property Name="WorkCardName" Type="nvarchar" MaxLength="50" />
+    <Property Name="NormalWork" Type="bit" />
+    <Property Name="OverTime" Type="bit" />
+    <Property Name="WorkMin" Type="smallint" />
+    <Property Name="WorkMinEnable" Type="bit" />
+    <Property Name="DutyCodeID" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="JobCardApp">
+    <Key>
+      <PropertyRef Name="JobCardID" />
+    </Key>
+    <Property Name="JobCardID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="DateStarted" Type="date" />
+    <Property Name="DateEnded" Type="date" />
+    <Property Name="CardType" Type="smallint" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="JobCardCriteria" Type="char" MaxLength="1" />
+    <Property Name="CriteriaData" Type="int" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="TimeIn" Type="datetime" />
+    <Property Name="TimeOut" Type="datetime" />
+    <Property Name="WorkMin" Type="smallint" />
+  </EntityType>
+  <EntityType Name="JobCardEmp">
+    <Key>
+      <PropertyRef Name="JobDataID" />
+    </Key>
+    <Property Name="EmpDate" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="JobDataID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="Dated" Type="datetime" />
+    <Property Name="SubmittedFrom" Type="int" />
+    <Property Name="WrkCardID" Type="smallint" />
+    <Property Name="CompanyID" Type="smallint" />
+    <Property Name="SendTo" Type="int" />
+    <Property Name="Approved" Type="bit" />
+    <Property Name="Rejected" Type="bit" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="50" />
+    <Property Name="TimeIn" Type="datetime" />
+    <Property Name="TimeOut" Type="datetime" />
+    <Property Name="WorkMin" Type="smallint" />
+  </EntityType>
+  <EntityType Name="JobTitle">
+    <Key>
+      <PropertyRef Name="JobID" />
+    </Key>
+    <Property Name="JobID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="JobTitle" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="LocID" />
+    </Key>
+    <Property Name="LocID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LocName" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="SiteID" Type="smallint" />
+    <Property Name="CompanyID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="LvApplication">
+    <Key>
+      <PropertyRef Name="LvID" />
+    </Key>
+    <Property Name="LvID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LvDate" Type="date" Nullable="false" />
+    <Property Name="LvType" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="FromDate" Type="date" Nullable="false" />
+    <Property Name="ToDate" Type="date" Nullable="false" />
+    <Property Name="NoOfDays" Type="real" Nullable="false" />
+    <Property Name="IsHalf" Type="bit" />
+    <Property Name="HalfAbsent" Type="bit" />
+    <Property Name="LvReason" Type="nvarchar" MaxLength="500" />
+    <Property Name="LvAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="ApprovedBy" Type="int" />
+    <Property Name="LvStatus" Type="char" MaxLength="1" />
+    <Property Name="CompanyID" Type="smallint" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="LvConsumed">
+    <Key>
+      <PropertyRef Name="EmpLvType" />
+    </Key>
+    <Property Name="EmpLvType" Type="nvarchar" Nullable="false" MaxLength="8" />
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="LeaveType" Type="char" MaxLength="1" />
+    <Property Name="CompanyID" Type="smallint" />
+    <Property Name="JanConsumed" Type="float" />
+    <Property Name="FebConsumed" Type="float" />
+    <Property Name="MarchConsumed" Type="float" />
+    <Property Name="AprConsumed" Type="float" />
+    <Property Name="MayConsumed" Type="float" />
+    <Property Name="JuneConsumed" Type="float" />
+    <Property Name="JulyConsumed" Type="float" />
+    <Property Name="AugustConsumed" Type="float" />
+    <Property Name="SepConsumed" Type="float" />
+    <Property Name="OctConsumed" Type="float" />
+    <Property Name="NovConsumed" Type="float" />
+    <Property Name="DecConsumed" Type="float" />
+    <Property Name="TotalForYear" Type="float" />
+    <Property Name="YearRemaining" Type="float" />
+    <Property Name="GrandTotal" Type="float" />
+    <Property Name="GrandTotalRemaining" Type="float" />
+  </EntityType>
+  <EntityType Name="LvData">
+    <Key>
+      <PropertyRef Name="EmpDate" />
+    </Key>
+    <Property Name="EmpDate" Type="nvarchar" Nullable="false" MaxLength="15" />
+    <Property Name="LvID" Type="int" />
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="AttDate" Type="date" Nullable="false" />
+    <Property Name="LvCode" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="LvStatus" Type="tinyint" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="Processed" Type="bit" />
+    <Property Name="HalfLeave" Type="bit" />
+    <Property Name="CompanyID" Type="smallint" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="LvQuota">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="A" Type="float" Nullable="false" />
+    <Property Name="TA" Type="float" />
+    <Property Name="B" Type="float" Nullable="false" />
+    <Property Name="TB" Type="float" />
+    <Property Name="C" Type="float" Nullable="false" />
+    <Property Name="TC" Type="float" />
+    <Property Name="D" Type="float" />
+    <Property Name="TD" Type="float" />
+    <Property Name="E" Type="float" />
+    <Property Name="TE" Type="float" />
+    <Property Name="F" Type="float" />
+    <Property Name="TF" Type="float" />
+    <Property Name="G" Type="float" />
+    <Property Name="TG" Type="float" />
+    <Property Name="H" Type="float" />
+    <Property Name="TH" Type="float" />
+    <Property Name="I" Type="float" />
+    <Property Name="TI" Type="float" />
+    <Property Name="J" Type="float" />
+    <Property Name="TJ" Type="float" />
+    <Property Name="K" Type="float" />
+    <Property Name="TK" Type="float" />
+    <Property Name="L" Type="float" />
+    <Property Name="TL" Type="float" />
+    <Property Name="CompanyID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="LvShort">
+    <Key>
+      <PropertyRef Name="SlID" />
+    </Key>
+    <Property Name="SlID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="DutyDate" Type="date" />
+    <Property Name="EmpDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="SHour" Type="time" />
+    <Property Name="EHour" Type="time" />
+    <Property Name="THour" Type="time" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="ApprovedBy" Type="int" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="CompanyID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="LvType">
+    <Key>
+      <PropertyRef Name="LvType" />
+    </Key>
+    <Property Name="LvType" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="LvDesc" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="FldName" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="HalfLeave" Type="bit" Nullable="false" />
+    <Property Name="HalfLvCode" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="HalfAbCode" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="MaxDays" Type="tinyint" Nullable="false" />
+    <Property Name="WorkDays" Type="bit" Nullable="false" />
+    <Property Name="VacDays" Type="bit" Nullable="false" />
+    <Property Name="MonthProcess" Type="bit" Nullable="false" />
+    <Property Name="UpdateBalance" Type="bit" Nullable="false" />
+    <Property Name="LvStatus" Type="bit" Nullable="false" />
+    <Property Name="Enable" Type="bit" />
+    <Property Name="CompanyID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Option">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LateMin" Type="smallint" Nullable="false" />
+    <Property Name="EarlyIn" Type="smallint" Nullable="false" />
+    <Property Name="EarlyOut" Type="smallint" Nullable="false" />
+    <Property Name="ExtraOut" Type="smallint" Nullable="false" />
+    <Property Name="PicFolder" Type="nvarchar" MaxLength="200" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DownTime" Type="bit" />
+    <Property Name="OverTime" Type="smallint" />
+    <Property Name="PermanentMonthlyClose" Type="datetime" />
+    <Property Name="ContractualMonthlyClose" Type="datetime" />
+    <Property Name="CompanyID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="PollData">
+    <Key>
+      <PropertyRef Name="PollID" />
+    </Key>
+    <Property Name="PollID" Type="bigint" Nullable="false" />
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="EmpDate" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FpID" Type="int" />
+    <Property Name="CardNo" Type="char" MaxLength="10" />
+    <Property Name="EntDate" Type="date" Nullable="false" />
+    <Property Name="EntTime" Type="datetime" Nullable="false" />
+    <Property Name="RdrID" Type="smallint" Nullable="false" />
+    <Property Name="RdrDuty" Type="tinyint" />
+    <Property Name="Process" Type="bit" />
+    <Property Name="Split" Type="bit" />
+    <Property Name="CompanyID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="RdrDutyCode">
+    <Key>
+      <PropertyRef Name="RdrDutyID" />
+    </Key>
+    <Property Name="RdrDutyID" Type="tinyint" Nullable="false" />
+    <Property Name="RdrDutyName" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="RdrEventLog">
+    <Key>
+      <PropertyRef Name="EventID" />
+    </Key>
+    <Property Name="EventID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ErrorCode" Type="tinyint" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="EventDate" Type="datetime" Nullable="false" />
+    <Property Name="ReaderID" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Reader">
+    <Key>
+      <PropertyRef Name="RdrID" />
+    </Key>
+    <Property Name="RdrID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RdrName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="RdrDutyID" Type="tinyint" Nullable="false" />
+    <Property Name="IpAdd" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IpPort" Type="smallint" Nullable="false" />
+    <Property Name="RdrTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="LocID" Type="smallint" />
+    <Property Name="CompanyID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="ReaderType">
+    <Key>
+      <PropertyRef Name="RdrTypeID" />
+    </Key>
+    <Property Name="RdrTypeID" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RdrTypeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="VendorID" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="ReaderVendor">
+    <Key>
+      <PropertyRef Name="VendorID" />
+    </Key>
+    <Property Name="VendorID" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VendorName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Reason">
+    <Key>
+      <PropertyRef Name="ReasonID" />
+    </Key>
+    <Property Name="ReasonID" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ReasonName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="RegionID" />
+    </Key>
+    <Property Name="RegionID" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RegionName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Roster">
+    <Key>
+      <PropertyRef Name="EmpDate" />
+    </Key>
+    <Property Name="EmpDate" Type="nvarchar" Nullable="false" MaxLength="14" />
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="RosterDate" Type="date" Nullable="false" />
+    <Property Name="DutyCode" Type="nvarchar" Nullable="false" MaxLength="5" />
+    <Property Name="DutyTime" Type="time" Nullable="false" />
+    <Property Name="WorkMin" Type="smallint" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="CompanyID" Type="smallint" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="OpenShift" Type="bit" />
+    <Property Name="RosterSubAppID" Type="int" />
+  </EntityType>
+  <EntityType Name="RosterApp">
+    <Key>
+      <PropertyRef Name="RotaApplD" />
+    </Key>
+    <Property Name="RotaApplD" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="DateStarted" Type="date" />
+    <Property Name="DateEnded" Type="date" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="RosterCriteria" Type="char" MaxLength="1" />
+    <Property Name="CriteriaData" Type="int" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="RotaTypeID" Type="tinyint" />
+    <Property Name="WorkMin" Type="smallint" />
+    <Property Name="DutyTime" Type="time" />
+    <Property Name="ShiftID" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="RosterDetail">
+    <Key>
+      <PropertyRef Name="CriteriaValueDate" />
+    </Key>
+    <Property Name="CriteriaValueDate" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="RosterAppID" Type="int" />
+    <Property Name="DutyCode" Type="char" MaxLength="1" />
+    <Property Name="DutyTime" Type="time" />
+    <Property Name="WorkMin" Type="smallint" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="CompanyID" Type="smallint" />
+    <Property Name="OpenShift" Type="bit" />
+    <Property Name="RosterDate" Type="date" />
+    <Property Name="UserID" Type="int" />
+  </EntityType>
+  <EntityType Name="RosterType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Repeat" Type="bit" />
+  </EntityType>
+  <EntityType Name="Section">
+    <Key>
+      <PropertyRef Name="SectionID" />
+    </Key>
+    <Property Name="SectionID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SectionName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeptID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="ServiceLog">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ErrorCode" Type="tinyint" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="DateTime" Type="datetime" Nullable="false" />
+    <Property Name="ReaderID" Type="smallint" Nullable="false" />
+    <Property Name="Processed" Type="bit" />
+  </EntityType>
+  <EntityType Name="Shift">
+    <Key>
+      <PropertyRef Name="ShiftID" />
+    </Key>
+    <Property Name="ShiftID" Type="tinyint" Nullable="false" />
+    <Property Name="ShiftName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="StartTime" Type="time" Nullable="false" />
+    <Property Name="DayOff1" Type="tinyint" Nullable="false" />
+    <Property Name="DayOff2" Type="tinyint" Nullable="false" />
+    <Property Name="Holiday" Type="bit" Nullable="false" />
+    <Property Name="RosterType" Type="tinyint" Nullable="false" />
+    <Property Name="MonMin" Type="smallint" Nullable="false" />
+    <Property Name="TueMin" Type="smallint" Nullable="false" />
+    <Property Name="WedMin" Type="smallint" Nullable="false" />
+    <Property Name="ThuMin" Type="smallint" Nullable="false" />
+    <Property Name="FriMin" Type="smallint" Nullable="false" />
+    <Property Name="SatMin" Type="smallint" Nullable="false" />
+    <Property Name="SunMin" Type="smallint" Nullable="false" />
+    <Property Name="LateIn" Type="smallint" />
+    <Property Name="EarlyIn" Type="smallint" />
+    <Property Name="EarlyOut" Type="smallint" />
+    <Property Name="LateOut" Type="smallint" />
+    <Property Name="OverTimeMin" Type="smallint" />
+    <Property Name="MinHrs" Type="smallint" />
+    <Property Name="HasBreak" Type="bit" />
+    <Property Name="BreakMin" Type="smallint" />
+    <Property Name="GZDays" Type="bit" />
+    <Property Name="OpenShift" Type="bit" />
+    <Property Name="CompanyID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Site">
+    <Key>
+      <PropertyRef Name="SiteID" />
+    </Key>
+    <Property Name="SiteID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SiteName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CityID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="300" />
+    <Property Name="RoleID" Type="tinyint" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="Department" Type="smallint" />
+    <Property Name="CanEdit" Type="bit" />
+    <Property Name="CanDelete" Type="bit" />
+    <Property Name="CanView" Type="bit" />
+    <Property Name="CompanyID" Type="smallint" />
+    <Property Name="CanAdd" Type="bit" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="MHR" Type="bit" />
+    <Property Name="MDevice" Type="bit" />
+    <Property Name="MLeave" Type="bit" />
+    <Property Name="MDesktop" Type="bit" />
+    <Property Name="MEditAtt" Type="bit" />
+    <Property Name="MUser" Type="bit" />
+    <Property Name="MOption" Type="bit" />
+    <Property Name="MRDailyAtt" Type="bit" />
+    <Property Name="MRLeave" Type="bit" />
+    <Property Name="MRMonthly" Type="bit" />
+    <Property Name="MRAudit" Type="bit" />
+    <Property Name="MRManualEditAtt" Type="bit" />
+    <Property Name="MREmployee" Type="bit" />
+    <Property Name="MRDetail" Type="bit" />
+    <Property Name="MRSummary" Type="bit" />
+    <Property Name="MRGraph" Type="bit" />
+    <Property Name="ViewPermanentStaff" Type="bit" />
+    <Property Name="ViewPermanentMgm" Type="bit" />
+    <Property Name="ViewContractual" Type="bit" />
+    <Property Name="ViewLocation" Type="bit" />
+    <Property Name="LocationID" Type="smallint" />
+    <Property Name="MRoster" Type="bit" />
+  </EntityType>
+  <EntityType Name="UserModule">
+    <Key>
+      <PropertyRef Name="UMID" />
+    </Key>
+    <Property Name="UMID" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UMName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ZTable">
+    <Key>
+      <PropertyRef Name="EmpNo" />
+    </Key>
+    <Property Name="EmpNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_AttData_Emp">
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="0..1" />
+    <End Role="AttData" Type="TAS2013Model.Store.AttData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="AttData">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttDataManEdit_Emp">
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="0..1" />
+    <End Role="AttDataManEdit" Type="TAS2013Model.Store.AttDataManEdit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="AttDataManEdit">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttDataManEdit_User">
+    <End Role="User" Type="TAS2013Model.Store.User" Multiplicity="0..1" />
+    <End Role="AttDataManEdit" Type="TAS2013Model.Store.AttDataManEdit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="AttDataManEdit">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttMnDataPer_Emp">
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="0..1" />
+    <End Role="AttMnDataPer" Type="TAS2013Model.Store.AttMnDataPer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="AttMnDataPer">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuditLog_User">
+    <End Role="User" Type="TAS2013Model.Store.User" Multiplicity="0..1" />
+    <End Role="AuditLog" Type="TAS2013Model.Store.AuditLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="AuditLog">
+        <PropertyRef Name="AuditUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Card_CardType">
+    <End Role="CardType" Type="TAS2013Model.Store.CardType" Multiplicity="0..1" />
+    <End Role="Card" Type="TAS2013Model.Store.Card" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CardType">
+        <PropertyRef Name="CardTypeID" />
+      </Principal>
+      <Dependent Role="Card">
+        <PropertyRef Name="CardTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Card_Emp">
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="0..1" />
+    <End Role="Card" Type="TAS2013Model.Store.Card" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="Card">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Card_Reason">
+    <End Role="Reason" Type="TAS2013Model.Store.Reason" Multiplicity="0..1" />
+    <End Role="Card" Type="TAS2013Model.Store.Card" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reason">
+        <PropertyRef Name="ReasonID" />
+      </Principal>
+      <Dependent Role="Card">
+        <PropertyRef Name="ReasonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_City_Region">
+    <End Role="Region" Type="TAS2013Model.Store.Region" Multiplicity="0..1" />
+    <End Role="City" Type="TAS2013Model.Store.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Region">
+        <PropertyRef Name="RegionID" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Department_Division">
+    <End Role="Division" Type="TAS2013Model.Store.Division" Multiplicity="0..1" />
+    <End Role="Department" Type="TAS2013Model.Store.Department" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Division">
+        <PropertyRef Name="DivisionID" />
+      </Principal>
+      <Dependent Role="Department">
+        <PropertyRef Name="DivID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_Crew">
+    <End Role="Crew" Type="TAS2013Model.Store.Crew" Multiplicity="0..1" />
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Crew">
+        <PropertyRef Name="CrewID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="CrewID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_Designation1">
+    <End Role="Designation" Type="TAS2013Model.Store.Designation" Multiplicity="0..1" />
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Designation">
+        <PropertyRef Name="DesignationID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="DesigID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_Grade">
+    <End Role="Grade" Type="TAS2013Model.Store.Grade" Multiplicity="0..1" />
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grade">
+        <PropertyRef Name="GradeID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="GradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_JobTitle">
+    <End Role="JobTitle" Type="TAS2013Model.Store.JobTitle" Multiplicity="0..1" />
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobTitle">
+        <PropertyRef Name="JobID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="JobID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_Location">
+    <End Role="Location" Type="TAS2013Model.Store.Location" Multiplicity="0..1" />
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="LocID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="LocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_Section">
+    <End Role="Section" Type="TAS2013Model.Store.Section" Multiplicity="0..1" />
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Section">
+        <PropertyRef Name="SectionID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="SecID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_ShiftID">
+    <End Role="Shift" Type="TAS2013Model.Store.Shift" Multiplicity="0..1" />
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shift">
+        <PropertyRef Name="ShiftID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="ShiftID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_TypeID">
+    <End Role="EmpType" Type="TAS2013Model.Store.EmpType" Multiplicity="0..1" />
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpType">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpAccess_Emp">
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="0..1" />
+    <End Role="EmpAccess" Type="TAS2013Model.Store.EmpAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="EmpAccess">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpFace_Emp">
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="1" />
+    <End Role="EmpFace" Type="TAS2013Model.Store.EmpFace" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="EmpFace">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpFp_Emp">
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="1" />
+    <End Role="EmpFp" Type="TAS2013Model.Store.EmpFp" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="EmpFp">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpPhoto_Emp1">
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="0..1" />
+    <End Role="EmpPhoto" Type="TAS2013Model.Store.EmpPhoto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="EmpPhoto">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpRdr_Reader">
+    <End Role="Reader" Type="TAS2013Model.Store.Reader" Multiplicity="1" />
+    <End Role="EmpRdr" Type="TAS2013Model.Store.EmpRdr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reader">
+        <PropertyRef Name="RdrID" />
+      </Principal>
+      <Dependent Role="EmpRdr">
+        <PropertyRef Name="RdrID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpType_Category">
+    <End Role="Category" Type="TAS2013Model.Store.Category" Multiplicity="0..1" />
+    <End Role="EmpType" Type="TAS2013Model.Store.EmpType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CatID" />
+      </Principal>
+      <Dependent Role="EmpType">
+        <PropertyRef Name="CatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Grade_Company">
+    <End Role="Company" Type="TAS2013Model.Store.Company" Multiplicity="0..1" />
+    <End Role="Grade" Type="TAS2013Model.Store.Grade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompID" />
+      </Principal>
+      <Dependent Role="Grade">
+        <PropertyRef Name="CompID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Location_Site">
+    <End Role="Site" Type="TAS2013Model.Store.Site" Multiplicity="0..1" />
+    <End Role="Location" Type="TAS2013Model.Store.Location" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Site">
+        <PropertyRef Name="SiteID" />
+      </Principal>
+      <Dependent Role="Location">
+        <PropertyRef Name="SiteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvApplication_Emp">
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="1" />
+    <End Role="LvApplication" Type="TAS2013Model.Store.LvApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="LvApplication">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvApplication_User">
+    <End Role="User" Type="TAS2013Model.Store.User" Multiplicity="0..1" />
+    <End Role="LvApplication" Type="TAS2013Model.Store.LvApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="LvApplication">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvApplications_LvType">
+    <End Role="LvType" Type="TAS2013Model.Store.LvType" Multiplicity="1" />
+    <End Role="LvApplication" Type="TAS2013Model.Store.LvApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LvType">
+        <PropertyRef Name="LvType" />
+      </Principal>
+      <Dependent Role="LvApplication">
+        <PropertyRef Name="LvType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvData_LvApplications">
+    <End Role="LvApplication" Type="TAS2013Model.Store.LvApplication" Multiplicity="0..1" />
+    <End Role="LvData" Type="TAS2013Model.Store.LvData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LvApplication">
+        <PropertyRef Name="LvID" />
+      </Principal>
+      <Dependent Role="LvData">
+        <PropertyRef Name="LvID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvData_LvCode">
+    <End Role="LvType" Type="TAS2013Model.Store.LvType" Multiplicity="1" />
+    <End Role="LvData" Type="TAS2013Model.Store.LvData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LvType">
+        <PropertyRef Name="LvType" />
+      </Principal>
+      <Dependent Role="LvData">
+        <PropertyRef Name="LvCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvQuota_Emp">
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="1" />
+    <End Role="LvQuota" Type="TAS2013Model.Store.LvQuota" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="LvQuota">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvShort_Emp">
+    <End Role="Emp" Type="TAS2013Model.Store.Emp" Multiplicity="0..1" />
+    <End Role="LvShort" Type="TAS2013Model.Store.LvShort" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="LvShort">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reader_Company">
+    <End Role="Company" Type="TAS2013Model.Store.Company" Multiplicity="0..1" />
+    <End Role="Reader" Type="TAS2013Model.Store.Reader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompID" />
+      </Principal>
+      <Dependent Role="Reader">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reader_Location">
+    <End Role="Location" Type="TAS2013Model.Store.Location" Multiplicity="0..1" />
+    <End Role="Reader" Type="TAS2013Model.Store.Reader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="LocID" />
+      </Principal>
+      <Dependent Role="Reader">
+        <PropertyRef Name="LocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reader_RdrDutyCode">
+    <End Role="RdrDutyCode" Type="TAS2013Model.Store.RdrDutyCode" Multiplicity="1" />
+    <End Role="Reader" Type="TAS2013Model.Store.Reader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RdrDutyCode">
+        <PropertyRef Name="RdrDutyID" />
+      </Principal>
+      <Dependent Role="Reader">
+        <PropertyRef Name="RdrDutyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reader_RdrID">
+    <End Role="Reader" Type="TAS2013Model.Store.Reader" Multiplicity="1" />
+    <End Role="PollData" Type="TAS2013Model.Store.PollData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reader">
+        <PropertyRef Name="RdrID" />
+      </Principal>
+      <Dependent Role="PollData">
+        <PropertyRef Name="RdrID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reader_ReaderType1">
+    <End Role="ReaderType" Type="TAS2013Model.Store.ReaderType" Multiplicity="1" />
+    <End Role="Reader" Type="TAS2013Model.Store.Reader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReaderType">
+        <PropertyRef Name="RdrTypeID" />
+      </Principal>
+      <Dependent Role="Reader">
+        <PropertyRef Name="RdrTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReaderType_ReaderVendor">
+    <End Role="ReaderVendor" Type="TAS2013Model.Store.ReaderVendor" Multiplicity="0..1" />
+    <End Role="ReaderType" Type="TAS2013Model.Store.ReaderType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReaderVendor">
+        <PropertyRef Name="VendorID" />
+      </Principal>
+      <Dependent Role="ReaderType">
+        <PropertyRef Name="VendorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Section_Department">
+    <End Role="Department" Type="TAS2013Model.Store.Department" Multiplicity="0..1" />
+    <End Role="Section" Type="TAS2013Model.Store.Section" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DeptID" />
+      </Principal>
+      <Dependent Role="Section">
+        <PropertyRef Name="DeptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Shift_DaysName">
+    <End Role="DaysName" Type="TAS2013Model.Store.DaysName" Multiplicity="1" />
+    <End Role="Shift" Type="TAS2013Model.Store.Shift" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DaysName">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Shift">
+        <PropertyRef Name="DayOff1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Shift_DaysName1">
+    <End Role="DaysName" Type="TAS2013Model.Store.DaysName" Multiplicity="1" />
+    <End Role="Shift" Type="TAS2013Model.Store.Shift" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DaysName">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Shift">
+        <PropertyRef Name="DayOff2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Shift_RosterType">
+    <End Role="RosterType" Type="TAS2013Model.Store.RosterType" Multiplicity="1" />
+    <End Role="Shift" Type="TAS2013Model.Store.Shift" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RosterType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Shift">
+        <PropertyRef Name="RosterType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Site_City">
+    <End Role="City" Type="TAS2013Model.Store.City" Multiplicity="0..1" />
+    <End Role="Site" Type="TAS2013Model.Store.Site" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="Site">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_UserRole1">
+    <End Role="UserRole" Type="TAS2013Model.Store.UserRole" Multiplicity="0..1" />
+    <End Role="User" Type="TAS2013Model.Store.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRole">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

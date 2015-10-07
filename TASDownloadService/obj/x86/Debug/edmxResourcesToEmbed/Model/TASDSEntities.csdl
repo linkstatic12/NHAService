@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TAS2013Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="TASDSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DownServiceLogs" EntityType="TAS2013Model.DownServiceLog" />
+    <EntitySet Name="Polls" EntityType="TAS2013Model.Poll" />
+    <EntitySet Name="Emps" EntityType="TAS2013Model.Emp" />
+    <EntitySet Name="ViewReaders" EntityType="TAS2013Model.ViewReader" />
+  </EntityContainer>
+  <EntityType Name="DownServiceLog">
+    <Key>
+      <PropertyRef Name="AuditID" />
+    </Key>
+    <Property Name="AuditID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ErrorCode" Type="Byte" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ReaderID" Type="Int32" Nullable="false" />
+    <Property Name="Processed" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Poll">
+    <Key>
+      <PropertyRef Name="PollID" />
+    </Key>
+    <Property Name="PollID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpID" Type="Int32" Nullable="false" />
+    <Property Name="EmpDate" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="FpID" Type="Int32" />
+    <Property Name="CardNo" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="EntDate" Type="DateTime" Nullable="false" />
+    <Property Name="EntTime" Type="DateTime" Nullable="false" />
+    <Property Name="RdrID" Type="Byte" Nullable="false" />
+    <Property Name="RdrDuty" Type="Byte" />
+    <Property Name="Process" Type="Boolean" />
+    <Property Name="Split" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Emp">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Type="Int32" Name="EmpID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="EmpNo" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EmpName" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="DesigID" />
+    <Property Type="Boolean" Name="Gender" />
+    <Property Type="Byte" Name="DeptID" Nullable="false" />
+    <Property Type="Byte" Name="ShiftID" Nullable="false" />
+    <Property Type="Byte" Name="LocID" Nullable="false" />
+    <Property Type="Byte" Name="TypeID" Nullable="false" />
+    <Property Type="String" Name="CardNo" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="FpID" />
+    <Property Type="String" Name="NicNo" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="JoinDate" />
+    <Property Type="String" Name="HomeAdd" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="ProcessAtt" Nullable="false" />
+    <Property Type="Boolean" Name="ProcessIn" Nullable="false" />
+    <Property Type="Boolean" Name="Status" />
+    <Property Type="String" Name="PhoneNo" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CellNo" MaxLength="15" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ViewReader">
+    <Key>
+      <PropertyRef Name="LocName" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="IpPort" />
+      <PropertyRef Name="IpAdd" />
+      <PropertyRef Name="Duty" />
+      <PropertyRef Name="RdrName" />
+      <PropertyRef Name="RdrID" />
+      <PropertyRef Name="RdrTypeName" />
+    </Key>
+    <Property Type="String" Name="RegionName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CityName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LocName" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Status" Nullable="false" />
+    <Property Type="Int16" Name="IpPort" Nullable="false" />
+    <Property Type="String" Name="IpAdd" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Byte" Name="Duty" Nullable="false" />
+    <Property Type="String" Name="RdrName" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Byte" Name="RdrID" Nullable="false" />
+    <Property Type="String" Name="RdrTypeName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

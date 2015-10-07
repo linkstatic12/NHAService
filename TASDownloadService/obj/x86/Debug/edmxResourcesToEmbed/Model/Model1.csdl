@@ -1,0 +1,1947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TAS2013Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="TAS2013Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AccessEmps" EntityType="TAS2013Model.AccessEmp" />
+    <EntitySet Name="AttCodes" EntityType="TAS2013Model.AttCode" />
+    <EntitySet Name="AttDatas" EntityType="TAS2013Model.AttData" />
+    <EntitySet Name="AttDataManEdits" EntityType="TAS2013Model.AttDataManEdit" />
+    <EntitySet Name="AttMnDatas" EntityType="TAS2013Model.AttMnData" />
+    <EntitySet Name="AttMnDataPers" EntityType="TAS2013Model.AttMnDataPer" />
+    <EntitySet Name="AttProcesses" EntityType="TAS2013Model.AttProcess" />
+    <EntitySet Name="AuditForms" EntityType="TAS2013Model.AuditForm" />
+    <EntitySet Name="AuditLogs" EntityType="TAS2013Model.AuditLog" />
+    <EntitySet Name="AuditOperations" EntityType="TAS2013Model.AuditOperation" />
+    <EntitySet Name="Cards" EntityType="TAS2013Model.Card" />
+    <EntitySet Name="CardTypes" EntityType="TAS2013Model.CardType" />
+    <EntitySet Name="Categories" EntityType="TAS2013Model.Category" />
+    <EntitySet Name="Cities" EntityType="TAS2013Model.City" />
+    <EntitySet Name="Companies" EntityType="TAS2013Model.Company" />
+    <EntitySet Name="Crews" EntityType="TAS2013Model.Crew" />
+    <EntitySet Name="DaysNames" EntityType="TAS2013Model.DaysName" />
+    <EntitySet Name="Departments" EntityType="TAS2013Model.Department" />
+    <EntitySet Name="Designations" EntityType="TAS2013Model.Designation" />
+    <EntitySet Name="Divisions" EntityType="TAS2013Model.Division" />
+    <EntitySet Name="DownloadTimes" EntityType="TAS2013Model.DownloadTime" />
+    <EntitySet Name="DutyCodes" EntityType="TAS2013Model.DutyCode" />
+    <EntitySet Name="DutyTimes" EntityType="TAS2013Model.DutyTime" />
+    <EntitySet Name="Emps" EntityType="TAS2013Model.Emp" />
+    <EntitySet Name="EmpAccesses" EntityType="TAS2013Model.EmpAccess" />
+    <EntitySet Name="EmpFaces" EntityType="TAS2013Model.EmpFace" />
+    <EntitySet Name="EmpFps" EntityType="TAS2013Model.EmpFp" />
+    <EntitySet Name="EmpPhotoes" EntityType="TAS2013Model.EmpPhoto" />
+    <EntitySet Name="EmpPresences" EntityType="TAS2013Model.EmpPresence" />
+    <EntitySet Name="EmpRdrs" EntityType="TAS2013Model.EmpRdr" />
+    <EntitySet Name="EmpTypes" EntityType="TAS2013Model.EmpType" />
+    <EntitySet Name="Grades" EntityType="TAS2013Model.Grade" />
+    <EntitySet Name="Holidays" EntityType="TAS2013Model.Holiday" />
+    <EntitySet Name="JobCards" EntityType="TAS2013Model.JobCard" />
+    <EntitySet Name="JobCardApps" EntityType="TAS2013Model.JobCardApp" />
+    <EntitySet Name="JobCardEmps" EntityType="TAS2013Model.JobCardEmp" />
+    <EntitySet Name="JobTitles" EntityType="TAS2013Model.JobTitle" />
+    <EntitySet Name="Locations" EntityType="TAS2013Model.Location" />
+    <EntitySet Name="LvApplications" EntityType="TAS2013Model.LvApplication" />
+    <EntitySet Name="LvConsumeds" EntityType="TAS2013Model.LvConsumed" />
+    <EntitySet Name="LvDatas" EntityType="TAS2013Model.LvData" />
+    <EntitySet Name="LvQuotas" EntityType="TAS2013Model.LvQuota" />
+    <EntitySet Name="LvShorts" EntityType="TAS2013Model.LvShort" />
+    <EntitySet Name="LvTypes" EntityType="TAS2013Model.LvType" />
+    <EntitySet Name="Options" EntityType="TAS2013Model.Option" />
+    <EntitySet Name="PollDatas" EntityType="TAS2013Model.PollData" />
+    <EntitySet Name="RdrDutyCodes" EntityType="TAS2013Model.RdrDutyCode" />
+    <EntitySet Name="RdrEventLogs" EntityType="TAS2013Model.RdrEventLog" />
+    <EntitySet Name="Readers" EntityType="TAS2013Model.Reader" />
+    <EntitySet Name="ReaderTypes" EntityType="TAS2013Model.ReaderType" />
+    <EntitySet Name="ReaderVendors" EntityType="TAS2013Model.ReaderVendor" />
+    <EntitySet Name="Reasons" EntityType="TAS2013Model.Reason" />
+    <EntitySet Name="Regions" EntityType="TAS2013Model.Region" />
+    <EntitySet Name="Rosters" EntityType="TAS2013Model.Roster" />
+    <EntitySet Name="RosterApps" EntityType="TAS2013Model.RosterApp" />
+    <EntitySet Name="RosterDetails" EntityType="TAS2013Model.RosterDetail" />
+    <EntitySet Name="RosterTypes" EntityType="TAS2013Model.RosterType" />
+    <EntitySet Name="Sections" EntityType="TAS2013Model.Section" />
+    <EntitySet Name="ServiceLogs" EntityType="TAS2013Model.ServiceLog" />
+    <EntitySet Name="Shifts" EntityType="TAS2013Model.Shift" />
+    <EntitySet Name="Sites" EntityType="TAS2013Model.Site" />
+    <EntitySet Name="sysdiagrams" EntityType="TAS2013Model.sysdiagram" />
+    <EntitySet Name="Users" EntityType="TAS2013Model.User" />
+    <EntitySet Name="UserModules" EntityType="TAS2013Model.UserModule" />
+    <EntitySet Name="UserRoles" EntityType="TAS2013Model.UserRole" />
+    <EntitySet Name="ZTables" EntityType="TAS2013Model.ZTable" />
+    <AssociationSet Name="FK_AttData_Emp" Association="TAS2013Model.FK_AttData_Emp">
+      <End Role="Emp" EntitySet="Emps" />
+      <End Role="AttData" EntitySet="AttDatas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttDataManEdit_Emp" Association="TAS2013Model.FK_AttDataManEdit_Emp">
+      <End Role="Emp" EntitySet="Emps" />
+      <End Role="AttDataManEdit" EntitySet="AttDataManEdits" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttDataManEdit_User" Association="TAS2013Model.FK_AttDataManEdit_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="AttDataManEdit" EntitySet="AttDataManEdits" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttMnDataPer_Emp" Association="TAS2013Model.FK_AttMnDataPer_Emp">
+      <End Role="Emp" EntitySet="Emps" />
+      <End Role="AttMnDataPer" EntitySet="AttMnDataPers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuditLog_User" Association="TAS2013Model.FK_AuditLog_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="AuditLog" EntitySet="AuditLogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Card_CardType" Association="TAS2013Model.FK_Card_CardType">
+      <End Role="CardType" EntitySet="CardTypes" />
+      <End Role="Card" EntitySet="Cards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Card_Emp" Association="TAS2013Model.FK_Card_Emp">
+      <End Role="Emp" EntitySet="Emps" />
+      <End Role="Card" EntitySet="Cards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Card_Reason" Association="TAS2013Model.FK_Card_Reason">
+      <End Role="Reason" EntitySet="Reasons" />
+      <End Role="Card" EntitySet="Cards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpType_Category" Association="TAS2013Model.FK_EmpType_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="EmpType" EntitySet="EmpTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_City_Region" Association="TAS2013Model.FK_City_Region">
+      <End Role="Region" EntitySet="Regions" />
+      <End Role="City" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Site_City" Association="TAS2013Model.FK_Site_City">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Site" EntitySet="Sites" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Grade_Company" Association="TAS2013Model.FK_Grade_Company">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="Grade" EntitySet="Grades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reader_Company" Association="TAS2013Model.FK_Reader_Company">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="Reader" EntitySet="Readers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_Crew" Association="TAS2013Model.FK_Emp_Crew">
+      <End Role="Crew" EntitySet="Crews" />
+      <End Role="Emp" EntitySet="Emps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Shift_DaysName" Association="TAS2013Model.FK_Shift_DaysName">
+      <End Role="DaysName" EntitySet="DaysNames" />
+      <End Role="Shift" EntitySet="Shifts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Shift_DaysName1" Association="TAS2013Model.FK_Shift_DaysName1">
+      <End Role="DaysName" EntitySet="DaysNames" />
+      <End Role="Shift" EntitySet="Shifts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Department_Division" Association="TAS2013Model.FK_Department_Division">
+      <End Role="Division" EntitySet="Divisions" />
+      <End Role="Department" EntitySet="Departments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Section_Department" Association="TAS2013Model.FK_Section_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Section" EntitySet="Sections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_Designation1" Association="TAS2013Model.FK_Emp_Designation1">
+      <End Role="Designation" EntitySet="Designations" />
+      <End Role="Emp" EntitySet="Emps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_Grade" Association="TAS2013Model.FK_Emp_Grade">
+      <End Role="Grade" EntitySet="Grades" />
+      <End Role="Emp" EntitySet="Emps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_JobTitle" Association="TAS2013Model.FK_Emp_JobTitle">
+      <End Role="JobTitle" EntitySet="JobTitles" />
+      <End Role="Emp" EntitySet="Emps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_Location" Association="TAS2013Model.FK_Emp_Location">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="Emp" EntitySet="Emps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_Section" Association="TAS2013Model.FK_Emp_Section">
+      <End Role="Section" EntitySet="Sections" />
+      <End Role="Emp" EntitySet="Emps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_ShiftID" Association="TAS2013Model.FK_Emp_ShiftID">
+      <End Role="Shift" EntitySet="Shifts" />
+      <End Role="Emp" EntitySet="Emps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_TypeID" Association="TAS2013Model.FK_Emp_TypeID">
+      <End Role="EmpType" EntitySet="EmpTypes" />
+      <End Role="Emp" EntitySet="Emps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpAccess_Emp" Association="TAS2013Model.FK_EmpAccess_Emp">
+      <End Role="Emp" EntitySet="Emps" />
+      <End Role="EmpAccess" EntitySet="EmpAccesses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpFace_Emp" Association="TAS2013Model.FK_EmpFace_Emp">
+      <End Role="Emp" EntitySet="Emps" />
+      <End Role="EmpFace" EntitySet="EmpFaces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpFp_Emp" Association="TAS2013Model.FK_EmpFp_Emp">
+      <End Role="Emp" EntitySet="Emps" />
+      <End Role="EmpFp" EntitySet="EmpFps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpPhoto_Emp1" Association="TAS2013Model.FK_EmpPhoto_Emp1">
+      <End Role="Emp" EntitySet="Emps" />
+      <End Role="EmpPhoto" EntitySet="EmpPhotoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvApplication_Emp" Association="TAS2013Model.FK_LvApplication_Emp">
+      <End Role="Emp" EntitySet="Emps" />
+      <End Role="LvApplication" EntitySet="LvApplications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvQuota_Emp" Association="TAS2013Model.FK_LvQuota_Emp">
+      <End Role="Emp" EntitySet="Emps" />
+      <End Role="LvQuota" EntitySet="LvQuotas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvShort_Emp" Association="TAS2013Model.FK_LvShort_Emp">
+      <End Role="Emp" EntitySet="Emps" />
+      <End Role="LvShort" EntitySet="LvShorts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpRdr_Reader" Association="TAS2013Model.FK_EmpRdr_Reader">
+      <End Role="Reader" EntitySet="Readers" />
+      <End Role="EmpRdr" EntitySet="EmpRdrs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Location_Site" Association="TAS2013Model.FK_Location_Site">
+      <End Role="Site" EntitySet="Sites" />
+      <End Role="Location" EntitySet="Locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reader_Location" Association="TAS2013Model.FK_Reader_Location">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="Reader" EntitySet="Readers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvApplication_User" Association="TAS2013Model.FK_LvApplication_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="LvApplication" EntitySet="LvApplications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvApplications_LvType" Association="TAS2013Model.FK_LvApplications_LvType">
+      <End Role="LvType" EntitySet="LvTypes" />
+      <End Role="LvApplication" EntitySet="LvApplications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvData_LvApplications" Association="TAS2013Model.FK_LvData_LvApplications">
+      <End Role="LvApplication" EntitySet="LvApplications" />
+      <End Role="LvData" EntitySet="LvDatas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LvData_LvCode" Association="TAS2013Model.FK_LvData_LvCode">
+      <End Role="LvType" EntitySet="LvTypes" />
+      <End Role="LvData" EntitySet="LvDatas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reader_RdrID" Association="TAS2013Model.FK_Reader_RdrID">
+      <End Role="Reader" EntitySet="Readers" />
+      <End Role="PollData" EntitySet="PollDatas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reader_RdrDutyCode" Association="TAS2013Model.FK_Reader_RdrDutyCode">
+      <End Role="RdrDutyCode" EntitySet="RdrDutyCodes" />
+      <End Role="Reader" EntitySet="Readers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reader_ReaderType1" Association="TAS2013Model.FK_Reader_ReaderType1">
+      <End Role="ReaderType" EntitySet="ReaderTypes" />
+      <End Role="Reader" EntitySet="Readers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReaderType_ReaderVendor" Association="TAS2013Model.FK_ReaderType_ReaderVendor">
+      <End Role="ReaderVendor" EntitySet="ReaderVendors" />
+      <End Role="ReaderType" EntitySet="ReaderTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Shift_RosterType" Association="TAS2013Model.FK_Shift_RosterType">
+      <End Role="RosterType" EntitySet="RosterTypes" />
+      <End Role="Shift" EntitySet="Shifts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_UserRole1" Association="TAS2013Model.FK_User_UserRole1">
+      <End Role="UserRole" EntitySet="UserRoles" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AccessEmp">
+    <Key>
+      <PropertyRef Name="AccessID" />
+    </Key>
+    <Property Type="Int32" Name="AccessID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ReaderID" />
+    <Property Type="Int32" Name="EmpID" />
+    <Property Type="Boolean" Name="Permission" />
+    <Property Type="DateTime" Name="CreateDate" />
+    <Property Type="Boolean" Name="Processed" />
+  </EntityType>
+  <EntityType Name="AttCode">
+    <Key>
+      <PropertyRef Name="AttID" />
+    </Key>
+    <Property Type="String" Name="AttID" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="AttDesc" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AttData">
+    <Key>
+      <PropertyRef Name="EmpDate" />
+    </Key>
+    <Property Type="String" Name="EmpDate" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="AttDate" />
+    <Property Type="String" Name="EmpNo" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmpID" />
+    <Property Type="String" Name="DutyCode" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Time" Name="DutyTime" />
+    <Property Type="DateTime" Name="TimeIn" />
+    <Property Type="DateTime" Name="TimeOut" />
+    <Property Type="Int16" Name="WorkMin" />
+    <Property Type="Int16" Name="LateIn" />
+    <Property Type="Int16" Name="LateOut" />
+    <Property Type="Int16" Name="EarlyIn" />
+    <Property Type="Int16" Name="EarlyOut" />
+    <Property Type="Int16" Name="OTMin" />
+    <Property Type="Int16" Name="GZOTMin" />
+    <Property Type="Int16" Name="BreakMin" />
+    <Property Type="Time" Name="SLMin" />
+    <Property Type="Boolean" Name="StatusP" />
+    <Property Type="Boolean" Name="StatusAB" />
+    <Property Type="Boolean" Name="StatusLI" />
+    <Property Type="Boolean" Name="StatusLO" />
+    <Property Type="Boolean" Name="StatusEI" />
+    <Property Type="Boolean" Name="StatusEO" />
+    <Property Type="Boolean" Name="StatusOT" />
+    <Property Type="Boolean" Name="StatusGZOT" />
+    <Property Type="Boolean" Name="StatusGZ" />
+    <Property Type="Boolean" Name="StatusDO" />
+    <Property Type="Boolean" Name="StatusHD" />
+    <Property Type="Boolean" Name="StatusSL" />
+    <Property Type="Boolean" Name="StatusOD" />
+    <Property Type="Boolean" Name="StatusHL" />
+    <Property Type="Boolean" Name="StatusLeave" />
+    <Property Type="Boolean" Name="StatusMN" />
+    <Property Type="Boolean" Name="StatusIN" />
+    <Property Type="Boolean" Name="StatusBreak" />
+    <Property Type="Int16" Name="ShifMin" />
+    <Property Type="Boolean" Name="ShfSplit" />
+    <Property Type="Boolean" Name="ProcessIn" />
+    <Property Type="String" Name="Remarks" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Tin0" />
+    <Property Type="DateTime" Name="Tout0" />
+    <Property Type="DateTime" Name="Tin1" />
+    <Property Type="DateTime" Name="Tout1" />
+    <Property Type="DateTime" Name="Tin2" />
+    <Property Type="DateTime" Name="Tout2" />
+    <Property Type="DateTime" Name="Tin3" />
+    <Property Type="DateTime" Name="Tout3" />
+    <Property Type="DateTime" Name="Tin4" />
+    <Property Type="DateTime" Name="Tout4" />
+    <Property Type="DateTime" Name="Tin5" />
+    <Property Type="DateTime" Name="Tout5" />
+    <Property Type="DateTime" Name="Tin6" />
+    <Property Type="DateTime" Name="Tout6" />
+    <Property Type="DateTime" Name="Tin7" />
+    <Property Type="DateTime" Name="Tout7" />
+    <Property Type="DateTime" Name="Tin8" />
+    <Property Type="DateTime" Name="Tout8" />
+    <Property Type="DateTime" Name="Tin9" />
+    <Property Type="DateTime" Name="Tout9" />
+    <Property Type="DateTime" Name="Tin10" />
+    <Property Type="DateTime" Name="Tout10" />
+    <Property Type="DateTime" Name="Tin11" />
+    <Property Type="DateTime" Name="Tout11" />
+    <Property Type="DateTime" Name="Tin12" />
+    <Property Type="DateTime" Name="Tout12" />
+    <Property Type="DateTime" Name="Tin13" />
+    <Property Type="DateTime" Name="Tout13" />
+    <Property Type="DateTime" Name="Tin14" />
+    <Property Type="DateTime" Name="Tout14" />
+    <Property Type="DateTime" Name="Tin15" />
+    <Property Type="DateTime" Name="Tout15" />
+    <NavigationProperty Name="Emp" Relationship="TAS2013Model.FK_AttData_Emp" FromRole="AttData" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="AttDataManEdit">
+    <Key>
+      <PropertyRef Name="AttEditID" />
+    </Key>
+    <Property Type="Int32" Name="AttEditID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="EmpID" />
+    <Property Type="DateTime" Name="EditDateTime" />
+    <Property Type="DateTime" Name="OldTimeIn" />
+    <Property Type="DateTime" Name="OldTimeOut" />
+    <Property Type="DateTime" Name="NewTimeIn" />
+    <Property Type="DateTime" Name="NewTimeOut" />
+    <Property Type="String" Name="EmpDate" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Process" />
+    <Property Type="String" Name="OldDutyCode" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Type="Time" Name="OldDutyTime" />
+    <Property Type="String" Name="NewDutyCode" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Type="Time" Name="NewDutyTime" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="Int16" Name="CompanyID" />
+    <Property Type="String" Name="OldRemarks" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NewRemarks" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Emp" Relationship="TAS2013Model.FK_AttDataManEdit_Emp" FromRole="AttDataManEdit" ToRole="Emp" />
+    <NavigationProperty Name="User" Relationship="TAS2013Model.FK_AttDataManEdit_User" FromRole="AttDataManEdit" ToRole="User" />
+  </EntityType>
+  <EntityType Name="AttMnData">
+    <Key>
+      <PropertyRef Name="EmpMonth" />
+    </Key>
+    <Property Type="String" Name="Period" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpMonth" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmpID" />
+    <Property Type="String" Name="EmpNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="D1" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D2" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D3" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D4" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D5" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D6" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D7" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D8" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D9" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D10" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D11" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D12" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D13" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D14" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D15" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D16" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D17" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D18" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D19" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D20" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D21" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D22" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D23" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D24" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D25" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D26" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D27" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D28" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D29" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D30" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D31" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Byte" Name="TotalDays" />
+    <Property Type="Double" Name="WorkDays" />
+    <Property Type="Double" Name="PreDays" />
+    <Property Type="Double" Name="AbDays" />
+    <Property Type="Byte" Name="RestDays" />
+    <Property Type="Byte" Name="GZDays" />
+    <Property Type="Byte" Name="LeaveDays" />
+    <Property Type="Double" Name="HalfLeavesDay" />
+    <Property Type="Byte" Name="OfficialDutyDays" />
+    <Property Type="Int16" Name="TEarlyIn" />
+    <Property Type="Int16" Name="TEarlyOut" />
+    <Property Type="Int16" Name="TLateIn" />
+    <Property Type="Int16" Name="TLateOut" />
+    <Property Type="Int16" Name="TWorkTime" />
+    <Property Type="Int16" Name="TNOT" />
+    <Property Type="Int16" Name="TGZOT" />
+    <Property Type="Int16" Name="ExpectedWrkTime" />
+    <Property Type="Int16" Name="OT1" />
+    <Property Type="Int16" Name="OT2" />
+    <Property Type="Int16" Name="OT3" />
+    <Property Type="Int16" Name="OT4" />
+    <Property Type="Int16" Name="OT5" />
+    <Property Type="Int16" Name="OT6" />
+    <Property Type="Int16" Name="OT7" />
+    <Property Type="Int16" Name="OT8" />
+    <Property Type="Int16" Name="OT9" />
+    <Property Type="Int16" Name="OT10" />
+    <Property Type="Int16" Name="OT11" />
+    <Property Type="Int16" Name="OT12" />
+    <Property Type="Int16" Name="OT13" />
+    <Property Type="Int16" Name="OT14" />
+    <Property Type="Int16" Name="OT15" />
+    <Property Type="Int16" Name="OT16" />
+    <Property Type="Int16" Name="OT17" />
+    <Property Type="Int16" Name="OT18" />
+    <Property Type="Int16" Name="OT19" />
+    <Property Type="Int16" Name="OT20" />
+    <Property Type="Int16" Name="OT21" />
+    <Property Type="Int16" Name="OT22" />
+    <Property Type="Int16" Name="OT23" />
+    <Property Type="Int16" Name="OT24" />
+    <Property Type="Int16" Name="OT25" />
+    <Property Type="Int16" Name="OT26" />
+    <Property Type="Int16" Name="OT27" />
+    <Property Type="Int16" Name="OT28" />
+    <Property Type="Int16" Name="OT29" />
+    <Property Type="Int16" Name="OT30" />
+    <Property Type="Int16" Name="OT31" />
+    <Property Type="String" Name="L1" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L2" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L3" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L4" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L5" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L6" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L7" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L8" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L9" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L10" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L11" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L12" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L13" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L14" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L15" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L16" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L17" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L18" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L19" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L20" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L21" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L22" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L23" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L24" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L25" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L26" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L27" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L28" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L29" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L30" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="L31" MaxLength="5" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AttMnDataPer">
+    <Key>
+      <PropertyRef Name="EmpMonth" />
+    </Key>
+    <Property Type="String" Name="Period" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpMonth" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmpNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmpID" />
+    <Property Type="String" Name="EmpName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="D21" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D22" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D23" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D24" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D25" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D26" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D27" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D28" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D29" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D30" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D31" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D1" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D2" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D3" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D4" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D5" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D6" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D7" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D8" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D9" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D10" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D11" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D12" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D13" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D14" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D15" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D16" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D17" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D18" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D19" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="D20" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Byte" Name="TotalDays" />
+    <Property Type="Byte" Name="WorkDays" />
+    <Property Type="Byte" Name="PreDays" />
+    <Property Type="Byte" Name="AbDays" />
+    <Property Type="Byte" Name="RestDays" />
+    <Property Type="Byte" Name="GZDays" />
+    <Property Type="Byte" Name="LeaveDays" />
+    <Property Type="Byte" Name="OfficialDutyDays" />
+    <Property Type="Int16" Name="TEarlyIn" />
+    <Property Type="Int16" Name="TEarlyOut" />
+    <Property Type="Int16" Name="TLateIn" />
+    <Property Type="Int16" Name="TLateOut" />
+    <Property Type="Int16" Name="TWorkTime" />
+    <Property Type="Int16" Name="TNOT" />
+    <Property Type="Int16" Name="TGZOT" />
+    <Property Type="Int16" Name="ExpectedWrkTime" />
+    <Property Type="Int16" Name="OT1" />
+    <Property Type="Int16" Name="OT2" />
+    <Property Type="Int16" Name="OT3" />
+    <Property Type="Int16" Name="OT4" />
+    <Property Type="Int16" Name="OT5" />
+    <Property Type="Int16" Name="OT6" />
+    <Property Type="Int16" Name="OT7" />
+    <Property Type="Int16" Name="OT8" />
+    <Property Type="Int16" Name="OT9" />
+    <Property Type="Int16" Name="OT10" />
+    <Property Type="Int16" Name="OT11" />
+    <Property Type="Int16" Name="OT12" />
+    <Property Type="Int16" Name="OT13" />
+    <Property Type="Int16" Name="OT14" />
+    <Property Type="Int16" Name="OT15" />
+    <Property Type="Int16" Name="OT16" />
+    <Property Type="Int16" Name="OT17" />
+    <Property Type="Int16" Name="OT18" />
+    <Property Type="Int16" Name="OT19" />
+    <Property Type="Int16" Name="OT20" />
+    <Property Type="Int16" Name="OT21" />
+    <Property Type="Int16" Name="OT22" />
+    <Property Type="Int16" Name="OT23" />
+    <Property Type="Int16" Name="OT24" />
+    <Property Type="Int16" Name="OT25" />
+    <Property Type="Int16" Name="OT26" />
+    <Property Type="Int16" Name="OT27" />
+    <Property Type="Int16" Name="OT28" />
+    <Property Type="Int16" Name="OT29" />
+    <Property Type="Int16" Name="OT30" />
+    <Property Type="Int16" Name="OT31" />
+    <NavigationProperty Name="Emp" Relationship="TAS2013Model.FK_AttMnDataPer_Emp" FromRole="AttMnDataPer" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="AttProcess">
+    <Key>
+      <PropertyRef Name="ProcessDate" />
+    </Key>
+    <Property Type="DateTime" Name="ProcessDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AuditForm">
+    <Key>
+      <PropertyRef Name="FormID" />
+    </Key>
+    <Property Type="Int16" Name="FormID" Nullable="false" />
+    <Property Type="String" Name="FormName" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AuditLog">
+    <Key>
+      <PropertyRef Name="AuditID" />
+    </Key>
+    <Property Type="Int32" Name="AuditID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="AuditDateTime" />
+    <Property Type="Int32" Name="AuditUserID" />
+    <Property Type="Int16" Name="FormID" />
+    <Property Type="Int16" Name="OperationID" />
+    <NavigationProperty Name="User" Relationship="TAS2013Model.FK_AuditLog_User" FromRole="AuditLog" ToRole="User" />
+  </EntityType>
+  <EntityType Name="AuditOperation">
+    <Key>
+      <PropertyRef Name="OperationID" />
+    </Key>
+    <Property Type="Int16" Name="OperationID" Nullable="false" />
+    <Property Type="String" Name="OperationName" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Card">
+    <Key>
+      <PropertyRef Name="CardID" />
+    </Key>
+    <Property Type="Int32" Name="CardID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="EmpID" />
+    <Property Type="String" Name="CardNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="UserID" />
+    <Property Type="DateTime" Name="DateOfIssue" />
+    <Property Type="DateTime" Name="DateOfExpiry" />
+    <Property Type="String" Name="Remarks" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="CardStatus" />
+    <Property Type="Byte" Name="ReasonID" />
+    <Property Type="Byte" Name="CardTypeID" />
+    <Property Type="Boolean" Name="active" />
+    <NavigationProperty Name="CardType" Relationship="TAS2013Model.FK_Card_CardType" FromRole="Card" ToRole="CardType" />
+    <NavigationProperty Name="Emp" Relationship="TAS2013Model.FK_Card_Emp" FromRole="Card" ToRole="Emp" />
+    <NavigationProperty Name="Reason" Relationship="TAS2013Model.FK_Card_Reason" FromRole="Card" ToRole="Reason" />
+  </EntityType>
+  <EntityType Name="CardType">
+    <Key>
+      <PropertyRef Name="CardTypeID" />
+    </Key>
+    <Property Type="Byte" Name="CardTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CardTypeName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Cards" Relationship="TAS2013Model.FK_Card_CardType" FromRole="CardType" ToRole="Card" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CatID" />
+    </Key>
+    <Property Type="Int16" Name="CatID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CatName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="CompanyID" />
+    <NavigationProperty Name="EmpTypes" Relationship="TAS2013Model.FK_EmpType_Category" FromRole="Category" ToRole="EmpType" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Type="Int16" Name="CityID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CityName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Byte" Name="RegionID" />
+    <NavigationProperty Name="Region" Relationship="TAS2013Model.FK_City_Region" FromRole="City" ToRole="Region" />
+    <NavigationProperty Name="Sites" Relationship="TAS2013Model.FK_Site_City" FromRole="City" ToRole="Site" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompID" />
+    </Key>
+    <Property Type="Int16" Name="CompID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CompName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TelNo" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Grades" Relationship="TAS2013Model.FK_Grade_Company" FromRole="Company" ToRole="Grade" />
+    <NavigationProperty Name="Readers" Relationship="TAS2013Model.FK_Reader_Company" FromRole="Company" ToRole="Reader" />
+  </EntityType>
+  <EntityType Name="Crew">
+    <Key>
+      <PropertyRef Name="CrewID" />
+    </Key>
+    <Property Type="Int16" Name="CrewID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CrewName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="CompanyID" />
+    <NavigationProperty Name="Emps" Relationship="TAS2013Model.FK_Emp_Crew" FromRole="Crew" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="DaysName">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Byte" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Shifts" Relationship="TAS2013Model.FK_Shift_DaysName" FromRole="DaysName" ToRole="Shift" />
+    <NavigationProperty Name="Shifts1" Relationship="TAS2013Model.FK_Shift_DaysName1" FromRole="DaysName" ToRole="Shift" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DeptID" />
+    </Key>
+    <Property Type="Int16" Name="DeptID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="DeptName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="DivID" />
+    <Property Type="Int16" Name="CompanyID" />
+    <NavigationProperty Name="Division" Relationship="TAS2013Model.FK_Department_Division" FromRole="Department" ToRole="Division" />
+    <NavigationProperty Name="Sections" Relationship="TAS2013Model.FK_Section_Department" FromRole="Department" ToRole="Section" />
+  </EntityType>
+  <EntityType Name="Designation">
+    <Key>
+      <PropertyRef Name="DesignationID" />
+    </Key>
+    <Property Type="Int32" Name="DesignationID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="DesignationName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="CompanyID" />
+    <NavigationProperty Name="Emps" Relationship="TAS2013Model.FK_Emp_Designation1" FromRole="Designation" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="Division">
+    <Key>
+      <PropertyRef Name="DivisionID" />
+    </Key>
+    <Property Type="Int16" Name="DivisionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="DivisionName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="CompID" />
+    <NavigationProperty Name="Departments" Relationship="TAS2013Model.FK_Department_Division" FromRole="Division" ToRole="Department" />
+  </EntityType>
+  <EntityType Name="DownloadTime">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Byte" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Time" Name="DownTime" />
+  </EntityType>
+  <EntityType Name="DutyCode">
+    <Key>
+      <PropertyRef Name="CodeID" />
+    </Key>
+    <Property Type="String" Name="CodeID" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="DutyName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DutyTime">
+    <Key>
+      <PropertyRef Name="TimeSample" />
+    </Key>
+    <Property Type="String" Name="TimeSample" Nullable="false" MaxLength="4" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Emp">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Type="Int32" Name="EmpID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="EmpNo" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EmpName" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="DesigID" />
+    <Property Type="Int16" Name="JobID" />
+    <Property Type="Byte" Name="Gender" />
+    <Property Type="Byte" Name="ShiftID" />
+    <Property Type="Int16" Name="LocID" />
+    <Property Type="Byte" Name="TypeID" />
+    <Property Type="Byte" Name="GradeID" />
+    <Property Type="Int16" Name="SecID" />
+    <Property Type="String" Name="CardNo" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="FpID" />
+    <Property Type="String" Name="PinCode" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NicNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FatherName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BloodGroup" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="BirthDate" />
+    <Property Type="String" Name="MarStatus" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="JoinDate" />
+    <Property Type="DateTime" Name="ValidDate" />
+    <Property Type="DateTime" Name="IssueDate" />
+    <Property Type="DateTime" Name="ResignDate" />
+    <Property Type="String" Name="HomeAdd" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="ProcessAtt" Nullable="false" />
+    <Property Type="Boolean" Name="ProcessIn" Nullable="false" />
+    <Property Type="Boolean" Name="Status" />
+    <Property Type="String" Name="PhoneNo" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remarks" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CellNo" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="CrewID" />
+    <Property Type="Boolean" Name="FlagFP" />
+    <Property Type="Boolean" Name="FlagFace" />
+    <Property Type="Boolean" Name="FlagCard" />
+    <Property Type="Int32" Name="EmpImageID" />
+    <Property Type="Int16" Name="CompanyID" />
+    <Property Type="Boolean" Name="Presence" />
+    <Property Type="Int16" Name="ReaderID" />
+    <NavigationProperty Name="AttDatas" Relationship="TAS2013Model.FK_AttData_Emp" FromRole="Emp" ToRole="AttData" />
+    <NavigationProperty Name="AttDataManEdits" Relationship="TAS2013Model.FK_AttDataManEdit_Emp" FromRole="Emp" ToRole="AttDataManEdit" />
+    <NavigationProperty Name="AttMnDataPers" Relationship="TAS2013Model.FK_AttMnDataPer_Emp" FromRole="Emp" ToRole="AttMnDataPer" />
+    <NavigationProperty Name="Cards" Relationship="TAS2013Model.FK_Card_Emp" FromRole="Emp" ToRole="Card" />
+    <NavigationProperty Name="Crew" Relationship="TAS2013Model.FK_Emp_Crew" FromRole="Emp" ToRole="Crew" />
+    <NavigationProperty Name="Designation" Relationship="TAS2013Model.FK_Emp_Designation1" FromRole="Emp" ToRole="Designation" />
+    <NavigationProperty Name="Grade" Relationship="TAS2013Model.FK_Emp_Grade" FromRole="Emp" ToRole="Grade" />
+    <NavigationProperty Name="JobTitle" Relationship="TAS2013Model.FK_Emp_JobTitle" FromRole="Emp" ToRole="JobTitle" />
+    <NavigationProperty Name="Location" Relationship="TAS2013Model.FK_Emp_Location" FromRole="Emp" ToRole="Location" />
+    <NavigationProperty Name="Section" Relationship="TAS2013Model.FK_Emp_Section" FromRole="Emp" ToRole="Section" />
+    <NavigationProperty Name="Shift" Relationship="TAS2013Model.FK_Emp_ShiftID" FromRole="Emp" ToRole="Shift" />
+    <NavigationProperty Name="EmpType" Relationship="TAS2013Model.FK_Emp_TypeID" FromRole="Emp" ToRole="EmpType" />
+    <NavigationProperty Name="EmpAccesses" Relationship="TAS2013Model.FK_EmpAccess_Emp" FromRole="Emp" ToRole="EmpAccess" />
+    <NavigationProperty Name="EmpFace" Relationship="TAS2013Model.FK_EmpFace_Emp" FromRole="Emp" ToRole="EmpFace" />
+    <NavigationProperty Name="EmpFp" Relationship="TAS2013Model.FK_EmpFp_Emp" FromRole="Emp" ToRole="EmpFp" />
+    <NavigationProperty Name="EmpPhotoes" Relationship="TAS2013Model.FK_EmpPhoto_Emp1" FromRole="Emp" ToRole="EmpPhoto" />
+    <NavigationProperty Name="LvApplications" Relationship="TAS2013Model.FK_LvApplication_Emp" FromRole="Emp" ToRole="LvApplication" />
+    <NavigationProperty Name="LvQuota" Relationship="TAS2013Model.FK_LvQuota_Emp" FromRole="Emp" ToRole="LvQuota" />
+    <NavigationProperty Name="LvShorts" Relationship="TAS2013Model.FK_LvShort_Emp" FromRole="Emp" ToRole="LvShort" />
+  </EntityType>
+  <EntityType Name="EmpAccess">
+    <Key>
+      <PropertyRef Name="AccessID" />
+    </Key>
+    <Property Type="Int32" Name="AccessID" Nullable="false" />
+    <Property Type="Int32" Name="EmpID" />
+    <Property Type="Byte" Name="RdrID" />
+    <Property Type="DateTime" Name="Date" />
+    <Property Type="Boolean" Name="Access" />
+    <NavigationProperty Name="Emp" Relationship="TAS2013Model.FK_EmpAccess_Emp" FromRole="EmpAccess" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="EmpFace">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Type="Int32" Name="EmpID" Nullable="false" />
+    <Property Type="String" Name="Face1" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Length" />
+    <NavigationProperty Name="Emp" Relationship="TAS2013Model.FK_EmpFace_Emp" FromRole="EmpFace" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="EmpFp">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Type="Int32" Name="EmpID" Nullable="false" />
+    <Property Type="String" Name="Fp1" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Fp2" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Fp3" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Fp4" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Fp5" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Fp6" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Emp" Relationship="TAS2013Model.FK_EmpFp_Emp" FromRole="EmpFp" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="EmpPhoto">
+    <Key>
+      <PropertyRef Name="PhotoID" />
+    </Key>
+    <Property Type="Int32" Name="PhotoID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Binary" Name="EmpPic" MaxLength="Max" FixedLength="false" />
+    <Property Type="Int32" Name="EmpID" />
+    <NavigationProperty Name="Emp" Relationship="TAS2013Model.FK_EmpPhoto_Emp1" FromRole="EmpPhoto" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="EmpPresence">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Type="Int32" Name="EmpID" Nullable="false" />
+    <Property Type="DateTime" Name="Date" />
+    <Property Type="Time" Name="TimeIn" />
+    <Property Type="Time" Name="TimeOut" />
+    <Property Type="Int16" Name="ReaderIn" />
+    <Property Type="Int16" Name="ReaderOut" />
+    <Property Type="Boolean" Name="StatusIn" />
+    <Property Type="Boolean" Name="StatusOut" />
+    <Property Type="Boolean" Name="Status" />
+  </EntityType>
+  <EntityType Name="EmpRdr">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="EmpID" Nullable="false" />
+    <Property Type="Int16" Name="RdrID" Nullable="false" />
+    <Property Type="DateTime" Name="DateModified" />
+    <NavigationProperty Name="Reader" Relationship="TAS2013Model.FK_EmpRdr_Reader" FromRole="EmpRdr" ToRole="Reader" />
+  </EntityType>
+  <EntityType Name="EmpType">
+    <Key>
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Type="Byte" Name="TypeID" Nullable="false" />
+    <Property Type="String" Name="TypeName" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Int16" Name="CatID" />
+    <NavigationProperty Name="Category" Relationship="TAS2013Model.FK_EmpType_Category" FromRole="EmpType" ToRole="Category" />
+    <NavigationProperty Name="Emps" Relationship="TAS2013Model.FK_Emp_TypeID" FromRole="EmpType" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="Grade">
+    <Key>
+      <PropertyRef Name="GradeID" />
+    </Key>
+    <Property Type="Byte" Name="GradeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="GradeName" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="CompID" />
+    <NavigationProperty Name="Company" Relationship="TAS2013Model.FK_Grade_Company" FromRole="Grade" ToRole="Company" />
+    <NavigationProperty Name="Emps" Relationship="TAS2013Model.FK_Emp_Grade" FromRole="Grade" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="Holiday">
+    <Key>
+      <PropertyRef Name="HolID" />
+    </Key>
+    <Property Type="Int16" Name="HolID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="HolDate" Nullable="false" />
+    <Property Type="String" Name="HolDesc" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="JobCard">
+    <Key>
+      <PropertyRef Name="WorkCardID" />
+    </Key>
+    <Property Type="Int16" Name="WorkCardID" Nullable="false" />
+    <Property Type="String" Name="WorkCardName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="NormalWork" />
+    <Property Type="Boolean" Name="OverTime" />
+    <Property Type="Int16" Name="WorkMin" />
+    <Property Type="Boolean" Name="WorkMinEnable" />
+    <Property Type="String" Name="DutyCodeID" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="JobCardApp">
+    <Key>
+      <PropertyRef Name="JobCardID" />
+    </Key>
+    <Property Type="Int32" Name="JobCardID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="DateCreated" />
+    <Property Type="DateTime" Name="DateStarted" />
+    <Property Type="DateTime" Name="DateEnded" />
+    <Property Type="Int16" Name="CardType" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="String" Name="JobCardCriteria" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="CriteriaData" />
+    <Property Type="Boolean" Name="Status" />
+    <Property Type="DateTime" Name="TimeIn" />
+    <Property Type="DateTime" Name="TimeOut" />
+    <Property Type="Int16" Name="WorkMin" />
+  </EntityType>
+  <EntityType Name="JobCardEmp">
+    <Key>
+      <PropertyRef Name="JobDataID" />
+    </Key>
+    <Property Type="String" Name="EmpDate" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="JobDataID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="EmpID" Nullable="false" />
+    <Property Type="DateTime" Name="Dated" />
+    <Property Type="Int32" Name="SubmittedFrom" />
+    <Property Type="Int16" Name="WrkCardID" />
+    <Property Type="Int16" Name="CompanyID" />
+    <Property Type="Int32" Name="SendTo" />
+    <Property Type="Boolean" Name="Approved" />
+    <Property Type="Boolean" Name="Rejected" />
+    <Property Type="DateTime" Name="DateCreated" />
+    <Property Type="String" Name="Remarks" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="TimeIn" />
+    <Property Type="DateTime" Name="TimeOut" />
+    <Property Type="Int16" Name="WorkMin" />
+  </EntityType>
+  <EntityType Name="JobTitle">
+    <Key>
+      <PropertyRef Name="JobID" />
+    </Key>
+    <Property Type="Int16" Name="JobID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="JobTitle1" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Emps" Relationship="TAS2013Model.FK_Emp_JobTitle" FromRole="JobTitle" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="LocID" />
+    </Key>
+    <Property Type="Int16" Name="LocID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="LocName" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Int16" Name="SiteID" />
+    <Property Type="Int16" Name="CompanyID" />
+    <NavigationProperty Name="Emps" Relationship="TAS2013Model.FK_Emp_Location" FromRole="Location" ToRole="Emp" />
+    <NavigationProperty Name="Site" Relationship="TAS2013Model.FK_Location_Site" FromRole="Location" ToRole="Site" />
+    <NavigationProperty Name="Readers" Relationship="TAS2013Model.FK_Reader_Location" FromRole="Location" ToRole="Reader" />
+  </EntityType>
+  <EntityType Name="LvApplication">
+    <Key>
+      <PropertyRef Name="LvID" />
+    </Key>
+    <Property Type="Int32" Name="LvID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="LvDate" Nullable="false" />
+    <Property Type="String" Name="LvType" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="EmpID" Nullable="false" />
+    <Property Type="DateTime" Name="FromDate" Nullable="false" />
+    <Property Type="DateTime" Name="ToDate" Nullable="false" />
+    <Property Type="Single" Name="NoOfDays" Nullable="false" />
+    <Property Type="Boolean" Name="IsHalf" />
+    <Property Type="Boolean" Name="HalfAbsent" />
+    <Property Type="String" Name="LvReason" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LvAddress" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="Int32" Name="ApprovedBy" />
+    <Property Type="String" Name="LvStatus" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int16" Name="CompanyID" />
+    <Property Type="Boolean" Name="Active" />
+    <NavigationProperty Name="Emp" Relationship="TAS2013Model.FK_LvApplication_Emp" FromRole="LvApplication" ToRole="Emp" />
+    <NavigationProperty Name="User" Relationship="TAS2013Model.FK_LvApplication_User" FromRole="LvApplication" ToRole="User" />
+    <NavigationProperty Name="LvType1" Relationship="TAS2013Model.FK_LvApplications_LvType" FromRole="LvApplication" ToRole="LvType" />
+    <NavigationProperty Name="LvDatas" Relationship="TAS2013Model.FK_LvData_LvApplications" FromRole="LvApplication" ToRole="LvData" />
+  </EntityType>
+  <EntityType Name="LvConsumed">
+    <Key>
+      <PropertyRef Name="EmpLvType" />
+    </Key>
+    <Property Type="String" Name="EmpLvType" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmpID" Nullable="false" />
+    <Property Type="String" Name="LeaveType" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int16" Name="CompanyID" />
+    <Property Type="Double" Name="JanConsumed" />
+    <Property Type="Double" Name="FebConsumed" />
+    <Property Type="Double" Name="MarchConsumed" />
+    <Property Type="Double" Name="AprConsumed" />
+    <Property Type="Double" Name="MayConsumed" />
+    <Property Type="Double" Name="JuneConsumed" />
+    <Property Type="Double" Name="JulyConsumed" />
+    <Property Type="Double" Name="AugustConsumed" />
+    <Property Type="Double" Name="SepConsumed" />
+    <Property Type="Double" Name="OctConsumed" />
+    <Property Type="Double" Name="NovConsumed" />
+    <Property Type="Double" Name="DecConsumed" />
+    <Property Type="Double" Name="TotalForYear" />
+    <Property Type="Double" Name="YearRemaining" />
+    <Property Type="Double" Name="GrandTotal" />
+    <Property Type="Double" Name="GrandTotalRemaining" />
+  </EntityType>
+  <EntityType Name="LvData">
+    <Key>
+      <PropertyRef Name="EmpDate" />
+    </Key>
+    <Property Type="String" Name="EmpDate" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="LvID" />
+    <Property Type="Int32" Name="EmpID" Nullable="false" />
+    <Property Type="DateTime" Name="AttDate" Nullable="false" />
+    <Property Type="String" Name="LvCode" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Byte" Name="LvStatus" Nullable="false" />
+    <Property Type="String" Name="Remarks" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Processed" />
+    <Property Type="Boolean" Name="HalfLeave" />
+    <Property Type="Int16" Name="CompanyID" />
+    <Property Type="Boolean" Name="Active" />
+    <NavigationProperty Name="LvApplication" Relationship="TAS2013Model.FK_LvData_LvApplications" FromRole="LvData" ToRole="LvApplication" />
+    <NavigationProperty Name="LvType" Relationship="TAS2013Model.FK_LvData_LvCode" FromRole="LvData" ToRole="LvType" />
+  </EntityType>
+  <EntityType Name="LvQuota">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Type="Int32" Name="EmpID" Nullable="false" />
+    <Property Type="Double" Name="A" Nullable="false" />
+    <Property Type="Double" Name="TA" />
+    <Property Type="Double" Name="B" Nullable="false" />
+    <Property Type="Double" Name="TB" />
+    <Property Type="Double" Name="C" Nullable="false" />
+    <Property Type="Double" Name="TC" />
+    <Property Type="Double" Name="D" />
+    <Property Type="Double" Name="TD" />
+    <Property Type="Double" Name="E" />
+    <Property Type="Double" Name="TE" />
+    <Property Type="Double" Name="F" />
+    <Property Type="Double" Name="TF" />
+    <Property Type="Double" Name="G" />
+    <Property Type="Double" Name="TG" />
+    <Property Type="Double" Name="H" />
+    <Property Type="Double" Name="TH" />
+    <Property Type="Double" Name="I" />
+    <Property Type="Double" Name="TI" />
+    <Property Type="Double" Name="J" />
+    <Property Type="Double" Name="TJ" />
+    <Property Type="Double" Name="K" />
+    <Property Type="Double" Name="TK" />
+    <Property Type="Double" Name="L" />
+    <Property Type="Double" Name="TL" />
+    <Property Type="Int16" Name="CompanyID" />
+    <NavigationProperty Name="Emp" Relationship="TAS2013Model.FK_LvQuota_Emp" FromRole="LvQuota" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="LvShort">
+    <Key>
+      <PropertyRef Name="SlID" />
+    </Key>
+    <Property Type="Int32" Name="SlID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="EmpID" />
+    <Property Type="DateTime" Name="DutyDate" />
+    <Property Type="String" Name="EmpDate" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Time" Name="SHour" />
+    <Property Type="Time" Name="EHour" />
+    <Property Type="Time" Name="THour" />
+    <Property Type="String" Name="Remarks" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="Int32" Name="ApprovedBy" />
+    <Property Type="Boolean" Name="Status" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="Int16" Name="CompanyID" />
+    <NavigationProperty Name="Emp" Relationship="TAS2013Model.FK_LvShort_Emp" FromRole="LvShort" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="LvType">
+    <Key>
+      <PropertyRef Name="LvType1" />
+    </Key>
+    <Property Type="String" Name="LvType1" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="LvDesc" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FldName" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="HalfLeave" Nullable="false" />
+    <Property Type="String" Name="HalfLvCode" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HalfAbCode" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Byte" Name="MaxDays" Nullable="false" />
+    <Property Type="Boolean" Name="WorkDays" Nullable="false" />
+    <Property Type="Boolean" Name="VacDays" Nullable="false" />
+    <Property Type="Boolean" Name="MonthProcess" Nullable="false" />
+    <Property Type="Boolean" Name="UpdateBalance" Nullable="false" />
+    <Property Type="Boolean" Name="LvStatus" Nullable="false" />
+    <Property Type="Boolean" Name="Enable" />
+    <Property Type="Int16" Name="CompanyID" />
+    <NavigationProperty Name="LvApplications" Relationship="TAS2013Model.FK_LvApplications_LvType" FromRole="LvType" ToRole="LvApplication" />
+    <NavigationProperty Name="LvDatas" Relationship="TAS2013Model.FK_LvData_LvCode" FromRole="LvType" ToRole="LvData" />
+  </EntityType>
+  <EntityType Name="Option">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int16" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int16" Name="LateMin" Nullable="false" />
+    <Property Type="Int16" Name="EarlyIn" Nullable="false" />
+    <Property Type="Int16" Name="EarlyOut" Nullable="false" />
+    <Property Type="Int16" Name="ExtraOut" Nullable="false" />
+    <Property Type="String" Name="PicFolder" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompanyName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="DownTime" />
+    <Property Type="Int16" Name="OverTime" />
+    <Property Type="DateTime" Name="PermanentMonthlyClose" />
+    <Property Type="DateTime" Name="ContractualMonthlyClose" />
+    <Property Type="Int16" Name="CompanyID" />
+  </EntityType>
+  <EntityType Name="PollData">
+    <Key>
+      <PropertyRef Name="PollID" />
+    </Key>
+    <Property Type="Int64" Name="PollID" Nullable="false" />
+    <Property Type="Int32" Name="EmpID" Nullable="false" />
+    <Property Type="String" Name="EmpDate" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="FpID" />
+    <Property Type="String" Name="CardNo" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="EntDate" Nullable="false" />
+    <Property Type="DateTime" Name="EntTime" Nullable="false" />
+    <Property Type="Int16" Name="RdrID" Nullable="false" />
+    <Property Type="Byte" Name="RdrDuty" />
+    <Property Type="Boolean" Name="Process" />
+    <Property Type="Boolean" Name="Split" />
+    <Property Type="Int16" Name="CompanyID" />
+    <NavigationProperty Name="Reader" Relationship="TAS2013Model.FK_Reader_RdrID" FromRole="PollData" ToRole="Reader" />
+  </EntityType>
+  <EntityType Name="RdrDutyCode">
+    <Key>
+      <PropertyRef Name="RdrDutyID" />
+    </Key>
+    <Property Type="Byte" Name="RdrDutyID" Nullable="false" />
+    <Property Type="String" Name="RdrDutyName" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Readers" Relationship="TAS2013Model.FK_Reader_RdrDutyCode" FromRole="RdrDutyCode" ToRole="Reader" />
+  </EntityType>
+  <EntityType Name="RdrEventLog">
+    <Key>
+      <PropertyRef Name="EventID" />
+    </Key>
+    <Property Type="Int32" Name="EventID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Byte" Name="ErrorCode" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="EventDate" Nullable="false" />
+    <Property Type="Int16" Name="ReaderID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Reader">
+    <Key>
+      <PropertyRef Name="RdrID" />
+    </Key>
+    <Property Type="Int16" Name="RdrID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RdrName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Byte" Name="RdrDutyID" Nullable="false" />
+    <Property Type="String" Name="IpAdd" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="IpPort" Nullable="false" />
+    <Property Type="Byte" Name="RdrTypeID" Nullable="false" />
+    <Property Type="Boolean" Name="Status" Nullable="false" />
+    <Property Type="Int16" Name="LocID" />
+    <Property Type="Int16" Name="CompanyID" />
+    <NavigationProperty Name="Company" Relationship="TAS2013Model.FK_Reader_Company" FromRole="Reader" ToRole="Company" />
+    <NavigationProperty Name="EmpRdrs" Relationship="TAS2013Model.FK_EmpRdr_Reader" FromRole="Reader" ToRole="EmpRdr" />
+    <NavigationProperty Name="Location" Relationship="TAS2013Model.FK_Reader_Location" FromRole="Reader" ToRole="Location" />
+    <NavigationProperty Name="PollDatas" Relationship="TAS2013Model.FK_Reader_RdrID" FromRole="Reader" ToRole="PollData" />
+    <NavigationProperty Name="RdrDutyCode" Relationship="TAS2013Model.FK_Reader_RdrDutyCode" FromRole="Reader" ToRole="RdrDutyCode" />
+    <NavigationProperty Name="ReaderType" Relationship="TAS2013Model.FK_Reader_ReaderType1" FromRole="Reader" ToRole="ReaderType" />
+  </EntityType>
+  <EntityType Name="ReaderType">
+    <Key>
+      <PropertyRef Name="RdrTypeID" />
+    </Key>
+    <Property Type="Byte" Name="RdrTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RdrTypeName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Byte" Name="VendorID" />
+    <NavigationProperty Name="Readers" Relationship="TAS2013Model.FK_Reader_ReaderType1" FromRole="ReaderType" ToRole="Reader" />
+    <NavigationProperty Name="ReaderVendor" Relationship="TAS2013Model.FK_ReaderType_ReaderVendor" FromRole="ReaderType" ToRole="ReaderVendor" />
+  </EntityType>
+  <EntityType Name="ReaderVendor">
+    <Key>
+      <PropertyRef Name="VendorID" />
+    </Key>
+    <Property Type="Byte" Name="VendorID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="VendorName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ReaderTypes" Relationship="TAS2013Model.FK_ReaderType_ReaderVendor" FromRole="ReaderVendor" ToRole="ReaderType" />
+  </EntityType>
+  <EntityType Name="Reason">
+    <Key>
+      <PropertyRef Name="ReasonID" />
+    </Key>
+    <Property Type="Byte" Name="ReasonID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ReasonName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Cards" Relationship="TAS2013Model.FK_Card_Reason" FromRole="Reason" ToRole="Card" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="RegionID" />
+    </Key>
+    <Property Type="Byte" Name="RegionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RegionName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Cities" Relationship="TAS2013Model.FK_City_Region" FromRole="Region" ToRole="City" />
+  </EntityType>
+  <EntityType Name="Roster">
+    <Key>
+      <PropertyRef Name="EmpDate" />
+    </Key>
+    <Property Type="String" Name="EmpDate" Nullable="false" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EmpID" Nullable="false" />
+    <Property Type="DateTime" Name="RosterDate" Nullable="false" />
+    <Property Type="String" Name="DutyCode" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="Time" Name="DutyTime" Nullable="false" />
+    <Property Type="Int16" Name="WorkMin" Nullable="false" />
+    <Property Type="String" Name="Remarks" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int16" Name="CompanyID" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="Boolean" Name="OpenShift" />
+    <Property Type="Int32" Name="RosterSubAppID" />
+  </EntityType>
+  <EntityType Name="RosterApp">
+    <Key>
+      <PropertyRef Name="RotaApplD" />
+    </Key>
+    <Property Type="Int32" Name="RotaApplD" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="DateCreated" />
+    <Property Type="DateTime" Name="DateStarted" />
+    <Property Type="DateTime" Name="DateEnded" />
+    <Property Type="Int32" Name="UserID" />
+    <Property Type="String" Name="RosterCriteria" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Int32" Name="CriteriaData" />
+    <Property Type="Boolean" Name="Status" />
+    <Property Type="Byte" Name="RotaTypeID" />
+    <Property Type="Int16" Name="WorkMin" />
+    <Property Type="Time" Name="DutyTime" />
+    <Property Type="Byte" Name="ShiftID" />
+  </EntityType>
+  <EntityType Name="RosterDetail">
+    <Key>
+      <PropertyRef Name="CriteriaValueDate" />
+    </Key>
+    <Property Type="String" Name="CriteriaValueDate" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="RosterAppID" />
+    <Property Type="String" Name="DutyCode" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="Time" Name="DutyTime" />
+    <Property Type="Int16" Name="WorkMin" />
+    <Property Type="String" Name="Remarks" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int16" Name="CompanyID" />
+    <Property Type="Boolean" Name="OpenShift" />
+    <Property Type="DateTime" Name="RosterDate" />
+    <Property Type="Int32" Name="UserID" />
+  </EntityType>
+  <EntityType Name="RosterType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Byte" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Repeat" />
+    <NavigationProperty Name="Shifts" Relationship="TAS2013Model.FK_Shift_RosterType" FromRole="RosterType" ToRole="Shift" />
+  </EntityType>
+  <EntityType Name="Section">
+    <Key>
+      <PropertyRef Name="SectionID" />
+    </Key>
+    <Property Type="Int16" Name="SectionID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="SectionName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="DeptID" />
+    <NavigationProperty Name="Department" Relationship="TAS2013Model.FK_Section_Department" FromRole="Section" ToRole="Department" />
+    <NavigationProperty Name="Emps" Relationship="TAS2013Model.FK_Emp_Section" FromRole="Section" ToRole="Emp" />
+  </EntityType>
+  <EntityType Name="ServiceLog">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Type="Int32" Name="LogID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Byte" Name="ErrorCode" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateTime" Nullable="false" />
+    <Property Type="Int16" Name="ReaderID" Nullable="false" />
+    <Property Type="Boolean" Name="Processed" />
+  </EntityType>
+  <EntityType Name="Shift">
+    <Key>
+      <PropertyRef Name="ShiftID" />
+    </Key>
+    <Property Type="Byte" Name="ShiftID" Nullable="false" />
+    <Property Type="String" Name="ShiftName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Time" Name="StartTime" Nullable="false" />
+    <Property Type="Byte" Name="DayOff1" Nullable="false" />
+    <Property Type="Byte" Name="DayOff2" Nullable="false" />
+    <Property Type="Boolean" Name="Holiday" Nullable="false" />
+    <Property Type="Byte" Name="RosterType" Nullable="false" />
+    <Property Type="Int16" Name="MonMin" Nullable="false" />
+    <Property Type="Int16" Name="TueMin" Nullable="false" />
+    <Property Type="Int16" Name="WedMin" Nullable="false" />
+    <Property Type="Int16" Name="ThuMin" Nullable="false" />
+    <Property Type="Int16" Name="FriMin" Nullable="false" />
+    <Property Type="Int16" Name="SatMin" Nullable="false" />
+    <Property Type="Int16" Name="SunMin" Nullable="false" />
+    <Property Type="Int16" Name="LateIn" />
+    <Property Type="Int16" Name="EarlyIn" />
+    <Property Type="Int16" Name="EarlyOut" />
+    <Property Type="Int16" Name="LateOut" />
+    <Property Type="Int16" Name="OverTimeMin" />
+    <Property Type="Int16" Name="MinHrs" />
+    <Property Type="Boolean" Name="HasBreak" />
+    <Property Type="Int16" Name="BreakMin" />
+    <Property Type="Boolean" Name="GZDays" />
+    <Property Type="Boolean" Name="OpenShift" />
+    <Property Type="Int16" Name="CompanyID" />
+    <NavigationProperty Name="DaysName" Relationship="TAS2013Model.FK_Shift_DaysName" FromRole="Shift" ToRole="DaysName" />
+    <NavigationProperty Name="DaysName1" Relationship="TAS2013Model.FK_Shift_DaysName1" FromRole="Shift" ToRole="DaysName" />
+    <NavigationProperty Name="Emps" Relationship="TAS2013Model.FK_Emp_ShiftID" FromRole="Shift" ToRole="Emp" />
+    <NavigationProperty Name="RosterType1" Relationship="TAS2013Model.FK_Shift_RosterType" FromRole="Shift" ToRole="RosterType" />
+  </EntityType>
+  <EntityType Name="Site">
+    <Key>
+      <PropertyRef Name="SiteID" />
+    </Key>
+    <Property Type="Int16" Name="SiteID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="SiteName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="CityID" />
+    <NavigationProperty Name="City" Relationship="TAS2013Model.FK_Site_City" FromRole="Site" ToRole="City" />
+    <NavigationProperty Name="Locations" Relationship="TAS2013Model.FK_Location_Site" FromRole="Site" ToRole="Location" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Type="Int32" Name="UserID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Type="Byte" Name="RoleID" />
+    <Property Type="DateTime" Name="DateCreated" />
+    <Property Type="String" Name="Name" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Status" />
+    <Property Type="Int16" Name="Department" />
+    <Property Type="Boolean" Name="CanEdit" />
+    <Property Type="Boolean" Name="CanDelete" />
+    <Property Type="Boolean" Name="CanView" />
+    <Property Type="Int16" Name="CompanyID" />
+    <Property Type="Boolean" Name="CanAdd" />
+    <Property Type="Int32" Name="EmpID" />
+    <Property Type="Boolean" Name="MHR" />
+    <Property Type="Boolean" Name="MDevice" />
+    <Property Type="Boolean" Name="MLeave" />
+    <Property Type="Boolean" Name="MDesktop" />
+    <Property Type="Boolean" Name="MEditAtt" />
+    <Property Type="Boolean" Name="MUser" />
+    <Property Type="Boolean" Name="MOption" />
+    <Property Type="Boolean" Name="MRDailyAtt" />
+    <Property Type="Boolean" Name="MRLeave" />
+    <Property Type="Boolean" Name="MRMonthly" />
+    <Property Type="Boolean" Name="MRAudit" />
+    <Property Type="Boolean" Name="MRManualEditAtt" />
+    <Property Type="Boolean" Name="MREmployee" />
+    <Property Type="Boolean" Name="MRDetail" />
+    <Property Type="Boolean" Name="MRSummary" />
+    <Property Type="Boolean" Name="MRGraph" />
+    <Property Type="Boolean" Name="ViewPermanentStaff" />
+    <Property Type="Boolean" Name="ViewPermanentMgm" />
+    <Property Type="Boolean" Name="ViewContractual" />
+    <Property Type="Boolean" Name="ViewLocation" />
+    <Property Type="Int16" Name="LocationID" />
+    <Property Type="Boolean" Name="MRoster" />
+    <NavigationProperty Name="AttDataManEdits" Relationship="TAS2013Model.FK_AttDataManEdit_User" FromRole="User" ToRole="AttDataManEdit" />
+    <NavigationProperty Name="AuditLogs" Relationship="TAS2013Model.FK_AuditLog_User" FromRole="User" ToRole="AuditLog" />
+    <NavigationProperty Name="LvApplications" Relationship="TAS2013Model.FK_LvApplication_User" FromRole="User" ToRole="LvApplication" />
+    <NavigationProperty Name="UserRole" Relationship="TAS2013Model.FK_User_UserRole1" FromRole="User" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="UserModule">
+    <Key>
+      <PropertyRef Name="UMID" />
+    </Key>
+    <Property Type="Byte" Name="UMID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UMName" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Type="Byte" Name="RoleID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="TAS2013Model.FK_User_UserRole1" FromRole="UserRole" ToRole="User" />
+  </EntityType>
+  <EntityType Name="ZTable">
+    <Key>
+      <PropertyRef Name="EmpNo" />
+    </Key>
+    <Property Type="String" Name="EmpNo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_AttData_Emp">
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="0..1" />
+    <End Type="TAS2013Model.AttData" Role="AttData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="AttData">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttDataManEdit_Emp">
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="0..1" />
+    <End Type="TAS2013Model.AttDataManEdit" Role="AttDataManEdit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="AttDataManEdit">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttDataManEdit_User">
+    <End Type="TAS2013Model.User" Role="User" Multiplicity="0..1" />
+    <End Type="TAS2013Model.AttDataManEdit" Role="AttDataManEdit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="AttDataManEdit">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttMnDataPer_Emp">
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="0..1" />
+    <End Type="TAS2013Model.AttMnDataPer" Role="AttMnDataPer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="AttMnDataPer">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuditLog_User">
+    <End Type="TAS2013Model.User" Role="User" Multiplicity="0..1" />
+    <End Type="TAS2013Model.AuditLog" Role="AuditLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="AuditLog">
+        <PropertyRef Name="AuditUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Card_CardType">
+    <End Type="TAS2013Model.CardType" Role="CardType" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Card" Role="Card" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CardType">
+        <PropertyRef Name="CardTypeID" />
+      </Principal>
+      <Dependent Role="Card">
+        <PropertyRef Name="CardTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Card_Emp">
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Card" Role="Card" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="Card">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Card_Reason">
+    <End Type="TAS2013Model.Reason" Role="Reason" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Card" Role="Card" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reason">
+        <PropertyRef Name="ReasonID" />
+      </Principal>
+      <Dependent Role="Card">
+        <PropertyRef Name="ReasonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpType_Category">
+    <End Type="TAS2013Model.Category" Role="Category" Multiplicity="0..1" />
+    <End Type="TAS2013Model.EmpType" Role="EmpType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CatID" />
+      </Principal>
+      <Dependent Role="EmpType">
+        <PropertyRef Name="CatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_City_Region">
+    <End Type="TAS2013Model.Region" Role="Region" Multiplicity="0..1" />
+    <End Type="TAS2013Model.City" Role="City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Region">
+        <PropertyRef Name="RegionID" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Site_City">
+    <End Type="TAS2013Model.City" Role="City" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Site" Role="Site" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="Site">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Grade_Company">
+    <End Type="TAS2013Model.Company" Role="Company" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Grade" Role="Grade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompID" />
+      </Principal>
+      <Dependent Role="Grade">
+        <PropertyRef Name="CompID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reader_Company">
+    <End Type="TAS2013Model.Company" Role="Company" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Reader" Role="Reader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompID" />
+      </Principal>
+      <Dependent Role="Reader">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_Crew">
+    <End Type="TAS2013Model.Crew" Role="Crew" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Crew">
+        <PropertyRef Name="CrewID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="CrewID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Shift_DaysName">
+    <End Type="TAS2013Model.DaysName" Role="DaysName" Multiplicity="1" />
+    <End Type="TAS2013Model.Shift" Role="Shift" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DaysName">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Shift">
+        <PropertyRef Name="DayOff1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Shift_DaysName1">
+    <End Type="TAS2013Model.DaysName" Role="DaysName" Multiplicity="1" />
+    <End Type="TAS2013Model.Shift" Role="Shift" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DaysName">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Shift">
+        <PropertyRef Name="DayOff2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Department_Division">
+    <End Type="TAS2013Model.Division" Role="Division" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Department" Role="Department" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Division">
+        <PropertyRef Name="DivisionID" />
+      </Principal>
+      <Dependent Role="Department">
+        <PropertyRef Name="DivID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Section_Department">
+    <End Type="TAS2013Model.Department" Role="Department" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Section" Role="Section" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DeptID" />
+      </Principal>
+      <Dependent Role="Section">
+        <PropertyRef Name="DeptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_Designation1">
+    <End Type="TAS2013Model.Designation" Role="Designation" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Designation">
+        <PropertyRef Name="DesignationID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="DesigID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_Grade">
+    <End Type="TAS2013Model.Grade" Role="Grade" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grade">
+        <PropertyRef Name="GradeID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="GradeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_JobTitle">
+    <End Type="TAS2013Model.JobTitle" Role="JobTitle" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobTitle">
+        <PropertyRef Name="JobID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="JobID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_Location">
+    <End Type="TAS2013Model.Location" Role="Location" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="LocID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="LocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_Section">
+    <End Type="TAS2013Model.Section" Role="Section" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Section">
+        <PropertyRef Name="SectionID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="SecID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_ShiftID">
+    <End Type="TAS2013Model.Shift" Role="Shift" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shift">
+        <PropertyRef Name="ShiftID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="ShiftID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_TypeID">
+    <End Type="TAS2013Model.EmpType" Role="EmpType" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpType">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="Emp">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpAccess_Emp">
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="0..1" />
+    <End Type="TAS2013Model.EmpAccess" Role="EmpAccess" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="EmpAccess">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpFace_Emp">
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="1" />
+    <End Type="TAS2013Model.EmpFace" Role="EmpFace" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="EmpFace">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpFp_Emp">
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="1" />
+    <End Type="TAS2013Model.EmpFp" Role="EmpFp" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="EmpFp">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpPhoto_Emp1">
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="0..1" />
+    <End Type="TAS2013Model.EmpPhoto" Role="EmpPhoto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="EmpPhoto">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvApplication_Emp">
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="1" />
+    <End Type="TAS2013Model.LvApplication" Role="LvApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="LvApplication">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvQuota_Emp">
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="1" />
+    <End Type="TAS2013Model.LvQuota" Role="LvQuota" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="LvQuota">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvShort_Emp">
+    <End Type="TAS2013Model.Emp" Role="Emp" Multiplicity="0..1" />
+    <End Type="TAS2013Model.LvShort" Role="LvShort" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="LvShort">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpRdr_Reader">
+    <End Type="TAS2013Model.Reader" Role="Reader" Multiplicity="1" />
+    <End Type="TAS2013Model.EmpRdr" Role="EmpRdr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reader">
+        <PropertyRef Name="RdrID" />
+      </Principal>
+      <Dependent Role="EmpRdr">
+        <PropertyRef Name="RdrID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Location_Site">
+    <End Type="TAS2013Model.Site" Role="Site" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Location" Role="Location" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Site">
+        <PropertyRef Name="SiteID" />
+      </Principal>
+      <Dependent Role="Location">
+        <PropertyRef Name="SiteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reader_Location">
+    <End Type="TAS2013Model.Location" Role="Location" Multiplicity="0..1" />
+    <End Type="TAS2013Model.Reader" Role="Reader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="LocID" />
+      </Principal>
+      <Dependent Role="Reader">
+        <PropertyRef Name="LocID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvApplication_User">
+    <End Type="TAS2013Model.User" Role="User" Multiplicity="0..1" />
+    <End Type="TAS2013Model.LvApplication" Role="LvApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="LvApplication">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvApplications_LvType">
+    <End Type="TAS2013Model.LvType" Role="LvType" Multiplicity="1" />
+    <End Type="TAS2013Model.LvApplication" Role="LvApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LvType">
+        <PropertyRef Name="LvType1" />
+      </Principal>
+      <Dependent Role="LvApplication">
+        <PropertyRef Name="LvType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvData_LvApplications">
+    <End Type="TAS2013Model.LvApplication" Role="LvApplication" Multiplicity="0..1" />
+    <End Type="TAS2013Model.LvData" Role="LvData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LvApplication">
+        <PropertyRef Name="LvID" />
+      </Principal>
+      <Dependent Role="LvData">
+        <PropertyRef Name="LvID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LvData_LvCode">
+    <End Type="TAS2013Model.LvType" Role="LvType" Multiplicity="1" />
+    <End Type="TAS2013Model.LvData" Role="LvData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LvType">
+        <PropertyRef Name="LvType1" />
+      </Principal>
+      <Dependent Role="LvData">
+        <PropertyRef Name="LvCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reader_RdrID">
+    <End Type="TAS2013Model.Reader" Role="Reader" Multiplicity="1" />
+    <End Type="TAS2013Model.PollData" Role="PollData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reader">
+        <PropertyRef Name="RdrID" />
+      </Principal>
+      <Dependent Role="PollData">
+        <PropertyRef Name="RdrID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reader_RdrDutyCode">
+    <End Type="TAS2013Model.RdrDutyCode" Role="RdrDutyCode" Multiplicity="1" />
+    <End Type="TAS2013Model.Reader" Role="Reader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RdrDutyCode">
+        <PropertyRef Name="RdrDutyID" />
+      </Principal>
+      <Dependent Role="Reader">
+        <PropertyRef Name="RdrDutyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reader_ReaderType1">
+    <End Type="TAS2013Model.ReaderType" Role="ReaderType" Multiplicity="1" />
+    <End Type="TAS2013Model.Reader" Role="Reader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReaderType">
+        <PropertyRef Name="RdrTypeID" />
+      </Principal>
+      <Dependent Role="Reader">
+        <PropertyRef Name="RdrTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReaderType_ReaderVendor">
+    <End Type="TAS2013Model.ReaderVendor" Role="ReaderVendor" Multiplicity="0..1" />
+    <End Type="TAS2013Model.ReaderType" Role="ReaderType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReaderVendor">
+        <PropertyRef Name="VendorID" />
+      </Principal>
+      <Dependent Role="ReaderType">
+        <PropertyRef Name="VendorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Shift_RosterType">
+    <End Type="TAS2013Model.RosterType" Role="RosterType" Multiplicity="1" />
+    <End Type="TAS2013Model.Shift" Role="Shift" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RosterType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Shift">
+        <PropertyRef Name="RosterType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_UserRole1">
+    <End Type="TAS2013Model.UserRole" Role="UserRole" Multiplicity="0..1" />
+    <End Type="TAS2013Model.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRole">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
